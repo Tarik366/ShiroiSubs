@@ -1,28 +1,32 @@
-@keyframes up {
-  from {background-color: rgba(34, 34, 34, 0.5);}
-  to {background-color: rgba(255, 255, 255, 0.5);}
+$background: rgba(34, 34, 34, 0.5);
+$background2: rgba(255, 255, 255, 0.5);
+.white-theme {
+  $background: rgba(255, 255, 255, 0.5);
+  $background2: rgba(34, 34, 34, 0.5);
+}
+@keyframes upi {
+  from {background-color: $background;}
+  to {background-color: $background2}
 }
 @keyframes upr {
-  from {background-color: rgba(255, 255, 255, 0.5);}
-  to {background-color: rgba(34, 34, 34, 0.5);}
+  from {background-color: $background2}
+  to {background-color: $background;}
 }
 .up {
   position: fixed;
   left: 5rem;
   bottom: 5rem;
-  background-color: rgba(34, 34, 34, 0.5);
-  padding: 1rem;
+  background-color: $background;
+  padding: 5px;
   border-radius: 50%;
   animation-name: upr;
   animation-duration: 1s;
 }
 .up:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  animation-name: up;
+  background-color: $background2;
+  animation-name: upi;
   animation-duration: 1s;
 }
 .up img {
-  filter: invert(100%);
   height: 3rem;
-  opacity: 100%;
 }

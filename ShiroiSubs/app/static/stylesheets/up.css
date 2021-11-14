@@ -1,28 +1,56 @@
-@keyframes up {
-    from {background-color: rgba(34, 34, 34, 0.5);}
-    to {background-color: rgba(255, 255, 255, 0.5);}
+@-webkit-keyframes upi {
+  from {
+    background-color: rgba(34, 34, 34, 0.5);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+@keyframes upi {
+  from {
+    background-color: rgba(34, 34, 34, 0.5);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+@-webkit-keyframes upr {
+  from {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  to {
+    background-color: rgba(34, 34, 34, 0.5);
+  }
 }
 @keyframes upr {
-    from {background-color: rgba(255, 255, 255, 0.5);}
-    to {background-color: rgba(34, 34, 34, 0.5);}
+  from {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  to {
+    background-color: rgba(34, 34, 34, 0.5);
+  }
 }
 .up {
-    position: fixed;
-    left: 5rem;
-    bottom: 5rem;
-    background-color: rgba(34, 34, 34, 0.5);
-    padding: 1rem;
-    border-radius: 50%;
-    animation-name: upr;
-    animation-duration: 1s;
+  position: fixed;
+  left: 5rem;
+  bottom: 5rem;
+  background-color: rgba(34, 34, 34, 0.5);
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-animation-name: upr;
+          animation-name: upr;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
+
 .up:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    animation-name: up;
-    animation-duration: 1s;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-animation-name: upi;
+          animation-name: upi;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
+
 .up img {
-    filter: invert(100%);
-    height: 3rem;
-    opacity: 100%;
-}
+  height: 3rem;
+}/*# sourceMappingURL=up.css.map */
