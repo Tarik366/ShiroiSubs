@@ -1,13 +1,11 @@
-$Dust: #616161;
-$Dark: #222222;
-$White: #ffffff;
-.Dark-theme {
-    $Dust: #616161;
-    $Dark: #222222;
-    $White: #ffffff;
+$background: #222222;
+$color: #ffffff;
+.white-theme {
+    $background: #dddddd;
+    $color: #ffffff;
 }
 @keyframes Button {
-    from {background-color: $Dark;
+    from {background-color: $background;
     padding: 1rem}
     to {background-color: gray;
     padding: 1.2rem}
@@ -15,11 +13,11 @@ $White: #ffffff;
 @keyframes Buttonr {
     from {background-color: gray;
         padding: 1rem}
-    to {background-color: $Dark;
+    to {background-color: $background;
         padding: 1.2rem}
 }
 main, a {
-    color: $White;
+    color: $color;
     font-family: "Arial",serif;
     font-size: 18px;
 }
@@ -29,8 +27,8 @@ button, .Login {
     padding: 1rem;
     border-radius: 0.9rem;
     background-color: #222222;
-    border-color: $White;
-    color: $White;
+    border-color: $color;
+    color: $color;
     &:hover {
         padding: 1.2rem;
         cursor: pointer;

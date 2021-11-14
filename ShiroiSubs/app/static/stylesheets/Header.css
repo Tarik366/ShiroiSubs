@@ -11,11 +11,9 @@ header {
 }
 header td {
   padding-left: 20px;
-  color: white;
+  color: #ffffff;
   transition: 1s;
 }
 header td:hover {
   transform: scale(1.2);
-}
-
-/*# sourceMappingURL=Header.css.map */
+}/*# sourceMappingURL=Header.css.map */

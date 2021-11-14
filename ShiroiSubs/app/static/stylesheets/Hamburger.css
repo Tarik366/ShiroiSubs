@@ -3,7 +3,6 @@
   height: 450px;
   width: 100vw;
   background-color: #616161;
-  display: none;
 }
 
 #Menu {
@@ -12,6 +11,6 @@
 #Menu :hover {
   cursor: pointer;
 }
-.men:checked ~ .Head {
+#Menu:checked ~ .Menu {
   display: block;
 }/*# sourceMappingURL=Hamburger.css.map */
