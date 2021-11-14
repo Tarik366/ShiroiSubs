@@ -5,18 +5,9 @@
     <meta charset="UTF-8">
     <title>ShiroiSubs</title>
     <script src="https://kit.fontawesome.com/9d73c3cf07.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../static/stylesheets/up.css">
-    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Button.css">
-    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Theme.css">
-    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Header.css">
-    <link rel="stylesheet" type="text/css" href="../static/stylesheets/MainItem.css">
-    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Discord.css">
-    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Offline.css">
-    <link rel="stylesheet" href="../static/stylesheets/Hamburger.css">
     <link rel="shortcut icon" href="../static/images/Logo.png" type="image/png" />
     <link rel="stylesheet" type="text/css" href="../static/stylesheets/Main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../static/stylesheets/font.css" />
 </head>
 <body>
 <div class="container">
@@ -70,12 +61,18 @@
                 </td>
                 <td>
                     <div class="ThemeDiv Head">
-                        <a href="AnaSayfaLight.html" id="Theme">
+                        <button onclick="myFunction()" id="Theme">
                             <i class="material-icons dark">&#xE518</i>
                             <i class="material-icons light">&#xE51C</i>
-                        </a>
+                        </button>
                     </div>
                 </td>
+                <script>
+                    function myFunction() {
+                        var element = document.body;
+                        element.classList.toggle("dark-mode");
+                    }
+                </script>
                 <td class="Head">
                     <div>
                         <a class="Login" href="Login/login.html">Giriş Yap</a>
@@ -92,36 +89,42 @@
     <main>
         <section>
             <div class="item">
-                <a class="link" href="Seriler/Abandoned%20Wife%20Has%20a%20New%20Husband/AbandonedWifeHasaNewHusband.html">
-                    <img width="200"  height="300" src="../static/Series/7376a17ce52df5601816841a71850f52.jpg">
-                    <div class="text">
-                        <p>Abandoned Wife Has a New Husband<br><br></p>
-                        <a class="link" href="Tags/Drama.html">Drama<br></a>
-                        <a class="link" href="Tags/Fantasy.html">Fantazi<br></a>
-                        <a class="link" href="Tags/Romance.html">Romantizm<br></a>
-                    </div>    
-                </a>
+                <div class="ite">
+                    <a class="link img" href="Seriler/Abandoned%20Wife%20Has%20a%20New%20Husband/AbandonedWifeHasaNewHusband.html">
+                        <img width="200"  height="300" src="../static/Series/7376a17ce52df5601816841a71850f52.jpg">
+                        <div class="text">
+                            <p>Abandoned Wife Has a New Husband<br></p>
+                            <a class="link" href="Tags/Drama.html">Drama</a>
+                            <a class="link" href="Tags/Fantasy.html">Fantazi</a>
+                            <a class="link" href="Tags/Romance.html">Romantizm</a>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="item">
-                <a class="link" href="Seriler/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy.html">
-                    <img width="200" height="300" src="../static/Series/8aafeeafb0e6ec65c5a4ce30fb69b7e1.jpg">
-                    <div class="text">
-                        <p>The Story of an Onee-San Who Wants to Keep a High School Boy<br><br></p>
-                        <a class="link" href="Tags/Comedy.html">Komedi<br></a>
-                        <a class="link" href="Tags/SliceOfLife.html">Yaşamdan kesitler<br></a>
-                        <a class="link" href="Tags/Romance.html">Romantizm</a>
-                    </div>
-                </a>
+                <div class="ite">
+                    <a class="link img" href="Seriler/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy.html">
+                        <img width="200" height="300" src="../static/Series/8aafeeafb0e6ec65c5a4ce30fb69b7e1.jpg">
+                        <div class="text">
+                            <p>The Story of an Onee-San Who Wants to Keep a High School Boy<br><br></p>
+                            <a class="link" href="Tags/Comedy.html">Komedi</a>
+                            <a class="link" href="Tags/SliceOfLife.html">Yaşamdan kesitler</a>
+                            <a class="link" href="Tags/Romance.html">Romantizm</a>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="item">
-                <a href="Seriler/Bakapple/Bakapple.html">
-                    <img width="200" height="300" src="../static/Series/3d55e241c6db5fde25de494c37d49841.jpg">
-                    <div class="text">
-                        <p>Bakapple<br><br></p>
-                        <a href="Tags/Comedy.html">Komedi</a>
-                        <a href="Tags/Romance.html">Romantizm</a>
-                    </div>
-                </a>
+                <div class="ite">
+                    <a class="img link" href="Seriler/Bakapple/Bakapple.html">
+                        <img width="200" height="300" src="../static/Series/3d55e241c6db5fde25de494c37d49841.jpg">
+                        <div class="text">
+                            <p>Bakapple<br><br></p>
+                            <a href="Tags/Comedy.html">Komedi</a>
+                            <a href="Tags/Romance.html">Romantizm</a>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>

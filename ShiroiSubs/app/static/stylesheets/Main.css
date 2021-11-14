@@ -39,7 +39,7 @@ html, body {
 main, a {
   font-family: "Roboto Medium", serif;
   font-size: 20px;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -131,5 +131,416 @@ main {
     }
   }
 } */
+/* HEADER */
+body {
+  background-color: #222222;
+  width: 1920px;
+  margin: 0;
+}
+
+header {
+  background-color: gray;
+  margin: 0 0 2rem;
+  width: 1920px;
+}
+header td {
+  padding-left: 20px;
+  color: #ffffff;
+  transition: 1s;
+}
+header td:hover {
+  transform: scale(1.2);
+}
+header td .light {
+  display: none;
+  animation: disr 2s;
+}
+
+@keyframes dis {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
+@keyframes disr {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+#Theme {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+}
+#Theme:hover .dark {
+  display: none;
+  animation: dis;
+  animation-duration: 2s;
+}
+#Theme:hover .light {
+  display: block;
+}
+
+/* BUTTON */
+@keyframes Button {
+  from {
+    background-color: #222222;
+    padding: 1rem;
+  }
+  to {
+    background-color: gray;
+    padding: 1.2rem;
+  }
+}
+@keyframes Buttonr {
+  from {
+    background-color: gray;
+    padding: 1rem;
+  }
+  to {
+    background-color: #222222;
+    padding: 1.2rem;
+  }
+}
+main, a {
+  color: #ffffff;
+  font-family: "Arial", serif;
+  font-size: 18px;
+}
+
+button, .Login {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  padding: 1rem;
+  border-radius: 0.9rem;
+  background-color: #222222;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+button:hover, .Login:hover {
+  padding: 1.2rem;
+  cursor: pointer;
+  background-color: gray;
+  animation-name: Button;
+  animation-duration: 1s;
+}
+
+/* UP */
+@keyframes upi {
+  from {
+    background-color: #222222;
+  }
+  to {
+    background-color: black;
+  }
+}
+@keyframes upr {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: #222222;
+  }
+}
+.up {
+  position: fixed;
+  left: 5rem;
+  bottom: 5rem;
+  background-color: #222222;
+  padding: 5px;
+  border-radius: 50%;
+  animation-name: upr;
+  animation-duration: 1s;
+}
+
+.up:hover {
+  background-color: black;
+  animation-name: upi;
+  animation-duration: 1s;
+}
+
+.up img {
+  height: 3rem;
+}
+
+/* FONT */
+main, a, p, h1 {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.material-icons.md-48 {
+  font-size: 100px;
+}
+
+.material-icons {
+  font-family: "Material Icons", serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+/* DISCORD */
+@keyframes Discord {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #8c9eff;
+  }
+}
+@keyframes Discordr {
+  from {
+    background-color: #8c9eff;
+  }
+  to {
+    background-color: transparent;
+  }
+}
+.discord {
+  border-radius: 50%;
+  padding: 0.2rem;
+  width: 3.1rem;
+  height: 3.1rem;
+  position: relative;
+  animation-name: Discordr;
+  animation-duration: 1s;
+  text-align: initial;
+}
+
+.discord img {
+  position: absolute;
+}
+
+.discord:hover {
+  animation-name: Discord;
+  animation-duration: 1s;
+  background-color: #8c9eff;
+  padding: 0.2rem;
+}
+
+aside {
+  position: absolute;
+  left: 25px;
+  top: 150px;
+}
+
+/*  */
+.Menu {
+  display: none;
+  height: 450px;
+  width: 100vw;
+  background-color: gray;
+}
+
+#Menu {
+  display: none;
+}
+#Menu :hover {
+  cursor: pointer;
+}
+#Menu:checked ~ .Menu {
+  display: block;
+}
+
+/* UPLOAD */
+input {
+  background-color: transparent;
+  color: transparent;
+  position: relative;
+  left: 45vw;
+}
+
+/* MAIN ITEM */
+@keyframes Hover {
+  from {
+    background-color: #222222;
+  }
+  to {
+    background-color: black;
+  }
+}
+@keyframes Hoverr {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: #222222;
+  }
+}
+section {
+  position: relative;
+  left: 60%;
+}
+
+.item {
+  position: inherit;
+  display: grid;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 2rem;
+  width: 220px;
+  height: 450px;
+  padding: 10px;
+  float: left;
+  margin: 10px;
+  overflow: auto;
+  overflow-x: hidden;
+  animation-name: Hoverr;
+  animation-duration: 1s;
+  font-size: 48px;
+}
+.item:hover {
+  cursor: pointer;
+  animation-name: Hover;
+  animation-duration: 2s;
+  background-color: black;
+}
+.item::-webkit-scrollbar {
+  width: 6px;
+}
+.item a:hover, .item img {
+  cursor: pointer;
+}
+.item .img {
+  width: 200px;
+  height: 300px;
+}
+.item a, .item p {
+  color: white;
+  margin: 0;
+}
+
+.ite {
+  padding-left: 10px;
+}
+
+/* LOGIN */
+@keyframes Close {
+  from {
+    background-color: gray;
+  }
+  to {
+    background-color: red;
+  }
+}
+@keyframes Submit {
+  from {
+    background-color: #121212;
+    padding: 0.5rem;
+  }
+  to {
+    background-color: gray;
+    padding: 1rem;
+  }
+}
+@keyframes Submitr {
+  from {
+    background-color: gray;
+    padding: 1rem;
+  }
+  to {
+    background-color: #121212;
+    padding: 0.5rem;
+  }
+}
+.fname, .email, .pw {
+  margin: 20px;
+}
+
+.form {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.Sign div {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.548);
+  color: #000000;
+  z-index: 10;
+  transition: ease;
+}
+
+.Log-in-menu form, .Sign-up-menu form {
+  z-index: 20;
+  position: relative;
+  min-width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--DarkMain);
+  color: white;
+  border-radius: 1.5rem;
+}
+
+.Log-in-menu form input, .Sign-up-menu form input {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: gray;
+}
+
+.form-button {
+  position: relative;
+  background-color: #121212;
+  border-radius: 1rem;
+  border-style: hidden;
+  animation-name: Submitr;
+  animation-duration: 1s;
+  color: white;
+  padding: 0.5rem;
+}
+
+.form-button:hover {
+  padding: 1rem;
+  animation-name: Submit;
+  animation-duration: 1s;
+  background-color: gray;
+}
 
 /*# sourceMappingURL=Main.css.map */
