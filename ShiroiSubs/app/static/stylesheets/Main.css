@@ -1,9 +1,25 @@
+@-webkit-keyframes Logo {
+  from {
+    display: flex;
+  }
+  to {
+    display: none;
+  }
+}
 @keyframes Logo {
   from {
     display: flex;
   }
   to {
     display: none;
+  }
+}
+@-webkit-keyframes Logor {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
   }
 }
 @keyframes Logor {
@@ -14,12 +30,28 @@
     display: flex;
   }
 }
+@-webkit-keyframes A {
+  from {
+    padding-left: 0;
+  }
+  to {
+    padding-left: 2rem;
+  }
+}
 @keyframes A {
   from {
     padding-left: 0;
   }
   to {
     padding-left: 2rem;
+  }
+}
+@-webkit-keyframes Ar {
+  from {
+    padding-left: 2rem;
+  }
+  to {
+    padding-left: 0;
   }
 }
 @keyframes Ar {
@@ -39,6 +71,7 @@ html, body {
 main, a {
   font-family: "Roboto Medium", serif;
   font-size: 20px;
+  color: white;
 }
 
 main {
@@ -128,6 +161,4 @@ main {
       }
     }
   }
-} */
-
-/*# sourceMappingURL=Main.css.map */
+} *//*# sourceMappingURL=Main.css.map */
