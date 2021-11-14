@@ -1,12 +1,3 @@
-$background: #222222;
-$background2: black;
-$color: #ffffff;
-$Dust: gray;
-.dark-theme {
-  $background: #dddddd;
-  $background2: #fff;
-  $color: #ffffff;
-}
 @keyframes Logo {
   from {display: flex;}
   to {display: none;}
@@ -31,7 +22,7 @@ html, body {
 main, a{
   font-family: "Roboto Medium",serif;
   font-size: 20px;
-  color: $color;
+  color: black;
   text-decoration: none ;
 }
 main {
@@ -53,7 +44,7 @@ main {
   }
   header {
     width: 100vw;
-    background-color: $Dust;
+    background-color: #616161;
     height: 100px;}
   i.fas {
     font-size: 40px;
@@ -124,17 +115,17 @@ main {
 /* HEADER */
 
 body {
-  background-color: $background;
+  background-color: #222;
   width: 1920px;
   margin: 0;
 }
 header {
-  background-color: $Dust;
+  background-color: #616161;
   margin: 0 0 2rem;
   width: 1920px;
   td {
     padding-left: 20px;
-    color: $color;
+    color: white !important;
     transition: 1s;
     &:hover {
       transform: scale(1.2);
@@ -172,7 +163,7 @@ header {
 /* BUTTON */
 
 @keyframes Button {
-  from {background-color: $background;
+  from {background-color: #222;
     padding: 1rem}
   to {background-color: gray;
     padding: 1.2rem}
@@ -180,22 +171,17 @@ header {
 @keyframes Buttonr {
   from {background-color: gray;
     padding: 1rem}
-  to {background-color: $background;
+  to {background-color: #222;
     padding: 1.2rem}
-}
-main, a {
-  color: $color;
-  font-family: "Arial",serif;
-  font-size: 18px;
 }
 button, .Login {
   -webkit-appearance: button;
   -moz-appearance: button;
   padding: 1rem;
   border-radius: 0.9rem;
-  background-color: $background;
-  border-color: $color;
-  color: $color;
+  background-color: #222;
+  border-color: white;
+  color: white;
   &:hover {
     padding: 1.2rem;
     cursor: pointer;
@@ -208,62 +194,34 @@ button, .Login {
 /* UP */
 
 @keyframes upi {
-  from {background-color: $background;}
-  to {background-color: $background2}
+  from {background-color: #222;}
+  to {background-color: #2222}
 }
 @keyframes upr {
-  from {background-color: $background2}
-  to {background-color: $background;}
+  from {background-color: #2222}
+  to {background-color: #222;}
 }
 .up {
   position: fixed;
   left: 5rem;
   bottom: 5rem;
-  background-color: $background;
+  background-color: #222;
   padding: 5px;
   border-radius: 50%;
   animation-name: upr;
   animation-duration: 1s;
 }
 .up:hover {
-  background-color: $background2;
+  background-color: #2222;
   animation-name: upi;
   animation-duration: 1s;
 }
 .up img {
   height: 3rem;
 }
-/* FONT */
-main, a, p, h1 {color: $color; font-size: 24px;}
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; text-decoration: none;}
-.material-icons.md-48 { font-size: 100px; }
-.material-icons {
-  font-family: 'Material Icons', serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 48px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
 
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
 /* DISCORD */
+
 @keyframes Discord {
   from {background-color: transparent}
   to {background-color: #8c9eff}
@@ -297,13 +255,13 @@ aside {
   top: 150px;
 }
 
-/*  */
+/* HAMBURGER */
 
 .Menu {
   display: none;
   height: 450px;
   width: 100vw;
-  background-color: $Dust;
+  background-color: #616161;
 }
 #Menu {
   display: none;
@@ -327,12 +285,12 @@ input {
 /* MAIN ITEM */
 
 @keyframes Hover {
-  from {background-color: $background;}
-  to {background-color: $background2;}
+  from {background-color: #ddd;}
+  to {background-color: #fff;}
 }
 @keyframes Hoverr {
-  from {background-color: $background2;}
-  to {background-color: $background;}
+  from {background-color: #ddd;}
+  to {background-color: #fff;}
 }
 section {
   position: relative;
@@ -358,7 +316,7 @@ section {
     cursor: pointer;
     animation-name: Hover;
     animation-duration: 2s;
-    background-color: $background2;
+    background-color: #ddd;
   }
   &::-webkit-scrollbar {
     width: 6px;
@@ -369,7 +327,7 @@ section {
     height: 300px;
   }
   a, p {
-    color: white;
+    color: black;
     margin: 0;
   }
 }
