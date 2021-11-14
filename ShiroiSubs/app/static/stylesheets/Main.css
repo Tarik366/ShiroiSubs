@@ -70,12 +70,12 @@ html, body {
 
 * {
   font-family: "Roboto Medium", serif;
-  font-size: 20px;
   text-decoration: none;
+  color: white;
 }
 
 .container {
-  background-color: #ddd;
+  background-color: #222;
   height: 100vh;
 }
 
@@ -189,10 +189,7 @@ header td:hover {
 header td .light {
   display: none;
   -webkit-animation: disr 2s;
-          animation: disr 2s;
-}
-header td a {
-  color: white;
+  animation: disr 2s;
 }
 
 @-webkit-keyframes dis {
@@ -278,14 +275,14 @@ button, .Login {
   border-color: white;
   color: white;
 }
-button:hover, .Login:hover {
+button:hover, button:hover, .Login:hover, .Login:hover {
   padding: 1.2rem;
   cursor: pointer;
   background-color: gray;
   -webkit-animation-name: Button;
-          animation-name: Button;
+  animation-name: Button;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 .darkmode-toggle {
@@ -295,59 +292,58 @@ button:hover, .Login:hover {
 /* UP */
 @-webkit-keyframes upi {
   from {
-    background-color: #222;
+    background-color: #00000050;
   }
   to {
-    background-color: #2222;
+    background-color: #000;
   }
 }
 @keyframes upi {
   from {
-    background-color: #222;
+    background-color: #00000050;
   }
   to {
-    background-color: #2222;
+    background-color: #000;
   }
 }
 @-webkit-keyframes upr {
   from {
-    background-color: #2222;
+    background-color: #000;
   }
   to {
-    background-color: #222;
+    background-color: #00000050;
   }
 }
 @keyframes upr {
   from {
-    background-color: #2222;
+    background-color: #000;
   }
   to {
-    background-color: #222;
+    background-color: #00000050;
   }
 }
 .up {
   position: fixed;
   left: 5rem;
   bottom: 5rem;
-  background-color: #222;
+  background-color: #00000050;
   padding: 5px;
   border-radius: 50%;
+  color: white;
   -webkit-animation-name: upr;
-          animation-name: upr;
+  animation-name: upr;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
 }
-
+.up i {
+  font-size: 70px;
+}
 .up:hover {
-  background-color: #2222;
+  background-color: #000;
   -webkit-animation-name: upi;
-          animation-name: upi;
+  animation-name: upi;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
-.up img {
-  height: 3rem;
+  animation-duration: 1s;
 }
 
 /* DISCORD */
@@ -390,21 +386,21 @@ button:hover, .Login:hover {
   height: 50px;
   position: relative;
   -webkit-animation-name: Discordr;
-          animation-name: Discordr;
+  animation-name: Discordr;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  text-align: initial;
+  animation-duration: 1s;
+  font-size: 30px !important;
+  text-align: center;
 }
-
-.discord img {
-  position: absolute;
+.discord i {
+  position: relative;
+  top: 0.3rem;
 }
-
 .discord:hover {
   -webkit-animation-name: Discord;
-          animation-name: Discord;
+  animation-name: Discord;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   background-color: #8c9eff;
   padding: 0.2rem;
 }
@@ -426,9 +422,11 @@ aside {
 #Menu {
   display: none;
 }
+
 #Menu :hover {
   cursor: pointer;
 }
+
 #Menu:checked ~ .Menu {
   display: block;
 }
@@ -444,34 +442,34 @@ input {
 /* MAIN ITEM */
 @-webkit-keyframes Hover {
   from {
-    background-color: #ddd;
+    background-color: #222;
   }
   to {
-    background-color: #fff;
+    background-color: black;
   }
 }
 @keyframes Hover {
   from {
-    background-color: #ddd;
+    background-color: #222;
   }
   to {
-    background-color: #fff;
+    background-color: black;
   }
 }
 @-webkit-keyframes Hoverr {
   from {
-    background-color: #fff;
+    background-color: black;
   }
   to {
-    background-color: #ddd;
+    background-color: #222;
   }
 }
 @keyframes Hoverr {
   from {
-    background-color: #fff;
+    background-color: black;
   }
   to {
-    background-color: #ddd;
+    background-color: #222;
   }
 }
 section {
@@ -493,28 +491,33 @@ section {
   overflow: auto;
   overflow-x: hidden;
   -webkit-animation-name: Hoverr;
-          animation-name: Hoverr;
+  animation-name: Hoverr;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  font-size: 48px;
+  animation-duration: 1s;
+  font-size: 20px;
 }
-.item a {
-  color: #000;
+
+.item a, .item p {
+  color: #fff;
 }
+
 .item:hover {
   cursor: pointer;
   -webkit-animation-name: Hover;
-          animation-name: Hover;
+  animation-name: Hover;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  background-color: #ddd;
+  animation-duration: 2s;
+  background-color: black;
 }
+
 .item::-webkit-scrollbar {
   width: 6px;
 }
+
 .item a:hover, .item img {
   cursor: pointer;
 }
+
 .item .img {
   width: 200px;
   height: 300px;
@@ -634,9 +637,9 @@ section {
   border-radius: 1rem;
   border-style: hidden;
   -webkit-animation-name: Submitr;
-          animation-name: Submitr;
+  animation-name: Submitr;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   color: white;
   padding: 0.5rem;
 }
@@ -644,16 +647,17 @@ section {
 .form-button:hover {
   padding: 1rem;
   -webkit-animation-name: Submit;
-          animation-name: Submit;
+  animation-name: Submit;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   background-color: gray;
 }
 
 .material-icons {
   font-size: 36px;
+  color: white;
 }
 
-.darkmode--activated p, .darkmode--activated a {
-  color: #fff;
+.darkmode--activated .item p, .darkmode--activated .item a {
+  color: black;
 }/*# sourceMappingURL=Main.css.map */

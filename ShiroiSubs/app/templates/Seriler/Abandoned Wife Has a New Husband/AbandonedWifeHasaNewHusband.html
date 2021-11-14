@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Abandoned Wife Has a New Husband</title>
-    <link rel="stylesheet" type="text/css" href="../item.css">
-    <link rel="stylesheet" type="text/css" href="../../../static/stylesheets/Header.css">
-    <link rel="stylesheet" type="text/css" href="../../../static/stylesheets/up.css">
+    <script src="https://kit.fontawesome.com/9d73c3cf07.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../static/images/Logo.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../../static/stylesheets/Main.css">
-    <link rel="stylesheet" type="text/css" href="../../../static/stylesheets/LSU.css">
-    <link rel="stylesheet" type="text/css" href="../../../static/stylesheets/Button.css">
-    <link rel="stylesheet" type="text/css" href="../../../static/stylesheets/Theme.css">
-    <link rel="stylesheet" type="text/css" href="../../../static/stylesheets/Discord.css">
+    <link rel="stylesheet" type="text/css" href="../../../static/stylesheets/Info.css">
 </head>
+<body>
 <body>
 <div class="container">
     <header id="header">
@@ -19,88 +17,63 @@
             <tr>
                 <td>
                     <div class="logo">
-                        <a href="../../main.html">
-                            <img src="../../../static/images/6277234851615291468-MiyamuraArtDark.png" alt="ShiroiSubs">
+                        <a href="main.html">
+                            <img src="../static/images/Logo.png" alt="ShiroiSubs">
                         </a>
                     </div>
                 </td>
+                <td id="Menu">
+                    <div class="Menu" id="Menu">
+                        <input class="men" type="checkbox">
+                    </div>
+                </td>
+                <!--<script>
+                    document.getElementById("Menu").addEventListener("click", function(){
+                        document.querySelector(".Head").style.display = "block";
+                    })
+                </script> -->
                 <td>
-                    <div class="Seriler">
-                        <a href="../../seriler.html">
-                            Seriler
-                        </a>
+                    <div class="Seriler Head">
+                        <a href="seriler.html">Seriler</a>
                     </div>
                 </td>
                 <td>
-                    <div class="Duyurular">
-                        <a href="../../Duyurular.html">Duyurular</a>
+                    <div class="Duyurular Head">
+                        <a href="Duyurular.html">Duyurular</a>
                     </div>
                 </td>
                 <td>
-                    <div class="Devam">
-                        <a href="../../DevamEdenler.html">
-                            Devam Edenler
-                        </a>
+                    <div class="Devam Head">
+                        <a href="DevamEdenler.html">Devam Edenler</a>
                     </div>
                 </td>
                 <td>
-                    <div class="Bitti">
-                        <a href="../../Bitti.html">
-                            Biten Seriler
-                        </a>
+                    <div class="Bitti Head">
+                        <a href="Bitti.html">Biten Seriler</a>
+
                     </div>
                 </td>
                 <td>
-                    <div class="discord">
+                    <div class="discord Head">
                         <a href="https://discord.gg/BeVbkSV7kv">
-                            <img src="../../../static/images/Discord-Logo-Lede.png" height="50" alt="Discord">
+                            <i class="fab fa-discord"></i>
                         </a>
                     </div>
                 </td>
-                <td>
-                    <div class="ThemeDiv">
-                        <a href="../../AnaSayfaLight.html" class="Theme">
-                            <img class="Themeimg" id="Sun" src="../../../static/images/sun.png">
-                        </a>
+                <td class="Head">
+                    <div>
+                        <a class="Login" href="Login/login.html">Giriş Yap</a>
                     </div>
                 </td>
-                <td class="Login">
+                <td class="Head">
                     <div>
-                        <button id="Log-in">Giriş Yap</button>
-                    </div>
-                </td>
-                <td class="Login">
-                    <div>
-                        <button id="Sign-up">Kayıt Ol</button>
+                        <a class="Login" href="Login/signup.html">Kayıt Ol</a>
                     </div>
                 </td>
             </tr>
         </table>
     </header>
     <main>
-        <div class="Sign">
-            <div class="Log-in-menu">
-                <form>
-                    <h3 id="modal-close">X</h3>
-                    <label for="emaili">E-posta</label>
-                    <input type="email" placeholder="E-posta" id="emaili"/>
-                    <label for="passwordi">Şifre</label>
-                    <input type="password" placeholder="Şifre" id="passwordi" autocomplete="on"/>
-                    <button id="SignInbutton" class="form-button" type="submit">Giriş Yap</button>
-                </form>
-            </div>
-            <div class="Sign-up-menu">
-                <form>
-                    <h3 id="sign-close">X</h3>
-                    <label for="Name">Kullanıcı Adı</label>
-                    <input type="text" placeholder="KullanıcıAdı" id="Name"/>
-                    <label for="password">Şifre</label>
-                    <input type="password" placeholder="Şifre" autocomplete="on" id="password"/>
-                    <button id="SignUpButton" class="form-button" type="submit">Kayıt Ol</button>
-                </form>
-                <script src="../../../static/Login.js"></script>
-            </div>
-        </div>
         <div class="wrap-box">
             <div class="mainitem">
                 <div class="thumbnail">
@@ -205,9 +178,22 @@
         <iframe class="Dframe" src="https://discord.com/widget?id=855468840237137931&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </aside>
 </div>
+
+<div class="offline">
+    İnternet bağlantınızda bir problem var, lütfen internet bağlantınızı kontrol edin.
+</div>
+<script>
+    const div = document.getElementById('offline')
+    window.addEventListener('online', () => {
+        div.style.display = 'none'
+    })
+    window.addEventListener('offline', () => {
+        div.style.display = 'block'
+    })
+</script>
 <div class="up">
     <a href="#header">
-        <img src="../../../static/images/up-arrow.png">
+        <i class="material-icons md-48">expand_less</i>
     </a>
 </div>
 </body>

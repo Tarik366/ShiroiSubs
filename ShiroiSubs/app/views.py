@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, url_for, redirect
 from itsdangerous import Signer, BadSignature
+import random
 
 app = Flask(__name__)
 
@@ -56,3 +57,7 @@ def uploadnewepisode():
             image = request.files["image"]
             print(image)
     return render_template("BolumYukle.html")
+
+@app.route("/02273")
+def manga():
+    return render_template("Seriler/Abandoned Wife Has a New Husband/AbandonedWifeHasaNewHusband.html")
