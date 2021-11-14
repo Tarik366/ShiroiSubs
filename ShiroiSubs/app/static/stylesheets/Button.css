@@ -1,3 +1,13 @@
+@-webkit-keyframes Button {
+  from {
+    background-color: #222222;
+    padding: 1rem;
+  }
+  to {
+    background-color: gray;
+    padding: 1.2rem;
+  }
+}
 @keyframes Button {
   from {
     background-color: #222222;
@@ -5,6 +15,16 @@
   }
   to {
     background-color: gray;
+    padding: 1.2rem;
+  }
+}
+@-webkit-keyframes Buttonr {
+  from {
+    background-color: gray;
+    padding: 1rem;
+  }
+  to {
+    background-color: #222222;
     padding: 1.2rem;
   }
 }
@@ -37,8 +57,8 @@ button:hover, .Login:hover {
   padding: 1.2rem;
   cursor: pointer;
   background-color: gray;
-  animation-name: Button;
-  animation-duration: 1s;
-}
-
-/*# sourceMappingURL=Button.css.map */
+  -webkit-animation-name: Button;
+          animation-name: Button;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}/*# sourceMappingURL=Button.css.map */

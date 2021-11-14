@@ -17,5 +17,29 @@ header {
         &:hover {
             transform: scale(1.2);
         }
+        .light {
+            display: none;
+            animation: disr 2s;
+        }
+    }
+}
+@keyframes dis {
+    from {display: block;}
+    to {display: none;}
+}
+@keyframes disr {
+    from {display: none;}
+    to {display: block;}
+}
+#Theme {
+    &:hover {
+        .dark {
+            display: none;
+            animation: dis;
+            animation-duration: 2s;
+        }
+        .light {
+            display: block;
+        }
     }
 }

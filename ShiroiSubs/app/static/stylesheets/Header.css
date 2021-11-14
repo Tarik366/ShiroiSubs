@@ -16,4 +16,53 @@ header td {
 }
 header td:hover {
   transform: scale(1.2);
+}
+header td .light {
+  display: none;
+  -webkit-animation: disr 2s;
+          animation: disr 2s;
+}
+
+@-webkit-keyframes dis {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
+
+@keyframes dis {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
+@-webkit-keyframes disr {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+@keyframes disr {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+#Theme:hover .dark {
+  display: none;
+  -webkit-animation: dis;
+          animation: dis;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+#Theme:hover .light {
+  display: block;
 }/*# sourceMappingURL=Header.css.map */
