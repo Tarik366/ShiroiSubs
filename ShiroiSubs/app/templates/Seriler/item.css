@@ -1,0 +1,74 @@
+td {
+    padding-left: 40px;
+    text-align: center;
+}
+.bolum {
+    border-style: solid;
+    border-color: gray ;
+    padding: 20px;
+}
+.info1 {
+    border-style: solid;
+    border-color: gray;
+    border-radius: 10px 0 0;
+}
+.info2 {
+    border-style: solid;
+    border-color: gray;
+}
+.info3 {
+    border-style: solid;
+    border-color: gray;
+    border-radius: 0 10px 0 0;
+}
+.serieinfo {
+    position: relative;
+    border-style: solid;
+    padding: 0.2rem;
+    top: -325px;
+    left: 400px;
+    width: 40%;
+    border-radius: 1rem;
+}
+.info {
+    border-style: solid;
+    border-color: gray;
+}
+.bolumlr {
+    position: relative;
+    left: 15%;
+    padding-bottom: 2rem;
+}
+h1 {margin-left: 100px;}
+p {margin-left: -20px;}
+.thumbnail {
+    margin-left: 100px;
+    width: 221px;
+    height: 325px;
+    position: relative;
+}
+.wrap-box {
+    position: relative;
+    left: 15%;
+}
+.bolumlr a {
+    color: aqua;
+}
+h1 {
+    position: relative;
+    left: 25%;
+}
+.first {
+    position: relative;
+    left: 12%;
+    bottom: 350px;
+    margin: 3rem;
+}
+.mainitem {
+    position: relative;
+    left: 2.4%;
+}
+#EpisodeList {
+    position: relative;
+    bottom: 375px;
+}

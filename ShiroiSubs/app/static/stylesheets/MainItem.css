@@ -1,0 +1,46 @@
+:root {
+  --Dark: #222222;
+}
+@keyframes Hover {
+  from {background-color: var(--Dark);}
+  to {background-color: black;}
+}
+@keyframes Hoverr {
+  from {background-color: black;}
+  to {background-color: var(--Dark);}
+}
+section {
+  position: relative;
+  left: 60%;
+}
+.item {
+  position: inherit;
+  display: grid;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 2rem;
+  width: 220px;
+  height: 450px;
+  padding-top: 10px;
+  padding-right: 1rem;
+  float: left;
+  margin: 10px;
+  overflow: auto;
+  overflow-x: hidden;
+  animation-name: Hoverr;
+  animation-duration: 1s;
+}
+.item:hover {
+  cursor: pointer;
+  animation-name: Hover;
+  animation-duration: 2s;
+  background-color: black;
+}
+.item::-webkit-scrollbar {
+  width: 6px;
+}
+a:hover, .item img {cursor: pointer}
+.item a, .item p {
+  color: white;
+  margin: 0 1rem;
+}

@@ -1,0 +1,22 @@
+.Chapter-Content {
+    position: relative;
+    margin-left: auto;
+    text-align: center;
+}
+.Chapter-item {
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    height: auto;
+}
+.chapter-button {
+    text-align: center;
+    margin-left: auto;
+    padding: 20px;
+}
+button {
+    background-color: greenyellow;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: #dddddd;
+}

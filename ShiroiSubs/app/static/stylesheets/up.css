@@ -1,0 +1,27 @@
+@keyframes up {
+    from {background-color: rgba(34, 34, 34, 0.5);}
+    to {background-color: rgba(255, 255, 255, 0.5);}
+}
+@keyframes upr {
+    from {background-color: rgba(255, 255, 255, 0.5);}
+    to {background-color: rgba(34, 34, 34, 0.5);}
+}
+.up {
+    position: fixed;
+    left: 5rem;
+    bottom: 5rem;
+    background-color: rgba(34, 34, 34, 0.5);
+    padding: 1rem;
+    border-radius: 50%;
+    animation-name: upr;
+    animation-duration: 1s;
+}
+.up:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    animation-name: up;
+    animation-duration: 1s;
+}
+.up img {
+    height: 3rem;
+    opacity: 100%;
+}

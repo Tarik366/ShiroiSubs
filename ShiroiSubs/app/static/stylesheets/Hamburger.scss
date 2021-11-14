@@ -1,0 +1,16 @@
+$Dust: #616161;
+.Menu {
+    display: none;
+    height: 450px;
+    width: 100vw;
+    background-color: $Dust;
+}
+#Menu {
+    display: none;
+    :hover {
+        cursor: pointer;
+    }
+    &:checked ~ .Menu {
+        display: block;
+    }
+}

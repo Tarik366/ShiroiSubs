@@ -1,0 +1,75 @@
+@keyframes Close {
+    from {background-color: gray;}
+    to {background-color: red;}
+}
+@keyframes Submit {
+    from {background-color: #121212; padding: 0.5rem;}
+    to {background-color: gray; padding: 1rem;}
+}
+@keyframes Submitr {
+    from {background-color: gray; padding: 1rem;}
+    to {background-color: #121212; padding: 0.5rem;}
+}
+.fname, .email, .pw {
+    margin: 20px;
+}
+.form {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+section a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+}
+.Sign div {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.548);
+    color: #000000;
+    z-index: 10;
+    transition: ease ;
+}
+.Log-in-menu form, .Sign-up-menu form {
+    z-index: 20;
+    position: relative;
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--DarkMain);
+    color: white;
+    border-radius: 1.5rem;
+}
+.Log-in-menu form input, .Sign-up-menu form input {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: gray;
+}
+.form-button {
+    position: relative;
+    background-color: #121212;
+    border-radius: 1rem;
+    border-style: hidden;
+    animation-name: Submitr;
+    animation-duration: 1s;
+    color: white;
+    padding: 0.5rem;
+}
+.form-button:hover {
+    padding: 1rem;
+    animation-name: Submit;
+    animation-duration: 1s;
+    background-color: gray;
+}

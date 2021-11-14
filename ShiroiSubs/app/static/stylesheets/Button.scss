@@ -1,0 +1,41 @@
+$Dust: #616161;
+$Dark: #222222;
+$White: #ffffff;
+.Dark-theme {
+    $Dust: #616161;
+    $Dark: #222222;
+    $White: #ffffff;
+}
+@keyframes Button {
+    from {background-color: $Dark;
+    padding: 1rem}
+    to {background-color: gray;
+    padding: 1.2rem}
+}
+@keyframes Buttonr {
+    from {background-color: gray;
+        padding: 1rem}
+    to {background-color: $Dark;
+        padding: 1.2rem}
+}
+main, a {
+    color: $White;
+    font-family: "Arial",serif;
+    font-size: 18px;
+}
+button, .Login {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    padding: 1rem;
+    border-radius: 0.9rem;
+    background-color: #222222;
+    border-color: $White;
+    color: $White;
+    &:hover {
+        padding: 1.2rem;
+        cursor: pointer;
+        background-color: gray;
+        animation-name: Button;
+        animation-duration: 1s;
+    }
+}

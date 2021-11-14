@@ -1,0 +1,89 @@
+:root {
+    --DarkMain: #222222;
+    --Main: #dddddd;
+    --DarkText: #ffffff;
+    --Text: #000000;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+@keyframes Discord {
+    from {background-color: transparent}
+    to {background-color: #8c9eff}
+}
+@keyframes Theme {
+    from {background-color: transparent}
+    to {background-color: #dddddd}
+}
+@keyframes Themer {
+    from {background-color: #dddddd;}
+    to {background-color: transparent}
+}
+body a {
+    color: black;
+}
+body {
+    background-color: #ffffff;
+    color: white;
+}
+html, body {
+    margin: 0;
+}
+.Theme{
+    display: flex;
+    background-color: transparent;
+    border-style: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    filter: invert(100%);
+    animation-name: Themer;
+    animation-duration: 1s;
+}
+.Theme:hover {
+    cursor: pointer;
+    background-color: #dddddd;
+    animation-name: Theme;
+    animation-duration: 1s;
+}
+header {
+    background-color: slategrey;
+    margin: 0;
+    width: 100vw;
+}
+header a {
+    color: white;
+}
+tr {
+    position: relative;
+}
+.Login {
+    display: flex;
+    right: 50%;
+}
+main, a{
+    font-family: "Arial",serif;
+    font-size: 20px;
+    color: black;
+}
+td {
+    padding-left: 40px;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.discord {
+    border-radius: 20%;
+}
+.discord:hover {
+    animation-name: Discord;
+    animation-duration: 1s;
+    background-color: #8c9eff;
+}
+.ThemeDiv {background-color: transparent}
+.Themeimg {
+    height: 3rem;
+    width: 3rem;
+    background-color: transparent;
+    color: transparent;
+}

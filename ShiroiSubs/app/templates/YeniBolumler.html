@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>ShiroiSubs</title>
+    <script src="https://kit.fontawesome.com/9d73c3cf07.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/up.css">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/LSU.css">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Button.css">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Theme.css">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Header.css">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/MainItem.css">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Discord.css">
+    <link rel="stylesheet" type="text/css" href="deneme.css">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Main.css">
+    <link rel="manifest" href="PWA/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="prototurk.com">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="../static/images/Logo.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="../static/images/Logo.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="../static/images/Logo.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="../static/images/Logo.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="../static/images/Logo.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="../static/images/Logo.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="../static/images/Logo.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link rel="apple-touch-icon" sizes="128x128" href="../static/images/Logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="../static/images/Logo.png">
+    <link rel="icon" sizes="192x192" href="../static/images/Logo.png">
+    <link rel="icon" sizes="128x128" href="../static/images/Logo.png">
+    <link rel="icon" href="../static/images/Logo.png" type="image/png"/>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('PWA/PWA.js?v=3');
+            });
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <header id="header">
+        <table>
+            <tr>
+                <td>
+                    <div class="logo">
+                        <a href="main.html" class="Anasayfa">
+                            <img id="Logo" src="../static/images/Logo.png" alt="ShiroiSubs">
+                            <img id="Logob" src="../static/images/LogoBig.png" alt="ShiroiSubs">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="Seriler">
+                        <a href="seriler.html">
+                            Seriler
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="YeniBolumler">
+                        <a href="YeniBolumler.html">Yeni Bölümler</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="Duyurular">
+                        <a href="Duyurular.html">Duyurular</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="Devam">
+                        <a href="DevamEdenler.html">
+                            Devam Edenler
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="Bitti">
+                         <a href="Bitti.html">
+                             Biten Seriler
+                         </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="discord">
+                        <a href="https://discord.gg/q5KpGAJaWe">
+                            <img src="../static/images/Discord-Logo-Lede.png" height="50" alt="Discord">
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="ThemeDiv">
+                        <a href="AnaSayfaLight.html" class="Theme">
+                            <img class="Themeimg" id="Sun" src="../static/images/sun.png">
+                        </a>
+                    </div>
+                </td>
+                <td class="Login">
+                    <div>
+                        <button id="Log-in">Giriş Yap</button>
+                    </div>
+                </td>
+                <td class="Login">
+                    <div>
+                        <button id="Sign-up">Kayıt Ol</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <div class="Sign">
+            <div class="Log-in-menu">
+                <form action="Login.php" method="post">
+                    <h3 id="modal-close">X</h3>
+                    <label for="emaili">E-posta</label>
+                    <input name="emailG" type="email" placeholder="E-posta" id="emaili"/>
+                    <label for="passwordi">Şifre</label>
+                    <input name="passwordG" type="password" placeholder="Şifre" id="passwordi" autocomplete="on"/>
+                    <button name="Giris" id="SignInbutton" class="form-button" type="submit">Giriş Yap</button>
+                </form>
+            </div>
+            <div class="Sign-up-menu">
+                <form action="Post.php" method="post">
+                    <h3 id="sign-close">X</h3>
+                    <label for="Name">Kullanıcı Adı</label>
+                    <input type="text" placeholder="KullanıcıAdı" name="name"/>
+                    <label for="email">E-posta</label>
+                    <input name="email" placeholder="E-mail" type="email">
+                    <label for="password">Şifre</label>
+                    <input type="password" placeholder="Şifre" autocomplete="on" id="password" name="password"/>
+                    <button name="Kayit" id="SignUpButton" class="form-button" type="submit">Kayıt Ol</button>
+                </form>
+                <script src="../static/Login.js"></script>
+            </div>
+        </div>
+            <aside>
+        <iframe class="Dframe" src="https://discord.com/widget?id=855468840237137931&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </aside>
+</div>
+<div class="up">
+    <a href="#header">
+        <img src="../static/images/up-arrow.png">
+    </a>
+</div>
+<div>
+    <button id="install-app" style="display: none">Uygulamayı Yükle</button>
+    <script>
+        const installButton = document.getElementById('install-app');
+        let beforeInstallPromptEvent
+        window.addEventListener("beforeinstallprompt", function(e) {
+            e.preventDefault();
+            beforeInstallPromptEvent = e
+            installButton.style.display = 'block'
+            installButton.addEventListener("click", function() {
+                e.prompt();
+            });
+            installButton.hidden = false;
+        });
+        installButton.addEventListener("click", function() {
+            beforeInstallPromptEvent.prompt();
+        });
+    </script>
+</div>
+</body>
+</html>

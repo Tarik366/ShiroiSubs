@@ -1,0 +1,21 @@
+$Dust: #616161;
+$Dark: #222222;
+$White: #ffffff;
+body {
+    background-color: $Dark;
+    width: 1920px;
+    margin: 0;
+}
+header {
+    background-color: $Dust;
+    margin: 0 0 2rem;
+    width: 1920px;
+    td {
+        padding-left: 20px;
+        color: $White;
+        transition: 1s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

@@ -1,0 +1,133 @@
+@keyframes Logo {
+  from {
+    display: flex;
+  }
+  to {
+    display: none;
+  }
+}
+@keyframes Logor {
+  from {
+    display: none;
+  }
+  to {
+    display: flex;
+  }
+}
+@keyframes A {
+  from {
+    padding-left: 0;
+  }
+  to {
+    padding-left: 2rem;
+  }
+}
+@keyframes Ar {
+  from {
+    padding-left: 2rem;
+  }
+  to {
+    padding-left: 0;
+  }
+}
+html, body {
+  margin: 0;
+  display: flex;
+  overflow-x: hidden;
+}
+
+main, a {
+  font-family: "Roboto Medium", serif;
+  font-size: 20px;
+}
+
+main {
+  float: left;
+  overflow-x: visible;
+}
+
+#Logo {
+  transition: width 2s;
+  position: relative;
+}
+
+@media screen and (max-width: 1280px) {
+  header {
+    width: 100vw;
+  }
+}
+/* @media screen and (max-width: 700px) {
+  main {
+    width: 1920px;
+  }
+  header {
+    width: 100vw;
+    background-color: $Dust;
+    height: 100px;}
+  i.fas {
+    font-size: 40px;
+  }
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    border-radius: 5px;
+
+    &:after {
+      content: "\f0c9";
+      background-image: url("../images/Bar.png");
+    }
+
+    &:checked {
+      .men ~ .Head {
+        display: block;
+      }
+    }
+  }
+  table td {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    animation-name: none;
+    animation-duration: 0s;
+    padding-left: 1rem;
+  }
+  .Head {
+    display: none;
+  }
+  .Dframe {
+    display: none;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -1rem;
+
+    .item {
+      width: 21%;
+      height: 20rem;
+      margin: 0 2rem 1rem;
+      overflow: hidden;
+      float: none;
+
+      .thumbnail {
+        position: relative;
+        left: -0.5rem;
+        width: 12rem;
+        height: 19rem;
+      }
+
+      .text {
+        position: relative;
+        width: 12rem;
+        left: 13rem;
+        bottom: 20rem;
+      }
+    }
+  }
+} */
+
+/*# sourceMappingURL=Main.css.map */

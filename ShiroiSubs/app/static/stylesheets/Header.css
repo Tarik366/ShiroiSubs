@@ -1,0 +1,21 @@
+body {
+  background-color: #222222;
+  width: 1920px;
+  margin: 0;
+}
+
+header {
+  background-color: #616161;
+  margin: 0 0 2rem;
+  width: 1920px;
+}
+header td {
+  padding-left: 20px;
+  color: white;
+  transition: 1s;
+}
+header td:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=Header.css.map */

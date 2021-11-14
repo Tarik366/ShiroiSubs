@@ -1,0 +1,17 @@
+.Menu {
+  display: none;
+  height: 450px;
+  width: 100vw;
+  background-color: #616161;
+  display: none;
+}
+
+#Menu {
+  display: none;
+}
+#Menu :hover {
+  cursor: pointer;
+}
+.men:checked ~ .Head {
+  display: block;
+}/*# sourceMappingURL=Hamburger.css.map */
