@@ -472,7 +472,8 @@ input {
 }
 section {
   position: relative;
-  left: 60%;
+  left: 50%;
+  width: 1000px;
 }
 
 .item {
@@ -486,7 +487,7 @@ section {
   padding: 10px;
   float: left;
   margin: 10px;
-  overflow: auto;
+  overflow-y: auto;
   overflow-x: hidden;
   -webkit-animation-name: Hoverr;
   animation-name: Hoverr;

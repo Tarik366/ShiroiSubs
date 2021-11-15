@@ -2,16 +2,15 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Yeni Bölümler</title>
+    <title>Seriler</title>
+    <script src="https://kit.fontawesome.com/9d73c3cf07.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../static/images/Logo.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../static/stylesheets/Main.css">
-    <link rel="stylesheet" type="text/css" href="../static/stylesheets/LSU.css">
-    <link rel="stylesheet" type="text/css" href="../static/stylesheets/MainItem.css">
-    <script src="../static/Style.js"></script>
 </head>
 <body>
-
 <div class="container">
-    <header>
+    <header id="header">
         <table>
             <tr>
                 <td>
@@ -21,134 +20,133 @@
                         </a>
                     </div>
                 </td>
+                <td id="Menu">
+                    <div class="Menu" id="Menu">
+                        <input class="men" type="checkbox">
+                    </div>
+                </td>
+                <!--<script>
+                    document.getElementById("Menu").addEventListener("click", function(){
+                        document.querySelector(".Head").style.display = "block";
+                    })
+                </script> -->
                 <td>
-                    <div class="Seriler">
-                        <a href="seriler.html">
-                            Seriler
-                        </a>
+                    <div class="Seriler Head">
+                        <a href="http://127.0.0.1:5000/seriler">Seriler</a>
                     </div>
                 </td>
                 <td>
-                    <div class="Duyurular">
-                        <a href="Duyurular.html">Duyurular</a>
+                    <div class="Duyurular Head">
+                        <a href="http://127.0.0.1:5000/duyurular">Duyurular</a>
                     </div>
                 </td>
                 <td>
-                    <div class="Devam">
-                        <a href="DevamEdenler.html">
-                            Devam Edenler
-                        </a>
+                    <div class="Devam Head">
+                        <a href="http://127.0.0.1:5000/devam">Devam Edenler</a>
                     </div>
                 </td>
                 <td>
-                    <div class="Bitti">
-                         <a href="Bitti.html">
-                             Biten Seriler
-                         </a>
+                    <div class="Bitti Head">
+                        <a href="http://127.0.0.1:5000/bitti">Biten Seriler</a>
+
                     </div>
                 </td>
                 <td>
-                    <div class="discord">
+                    <div class="discord Head">
                         <a href="https://discord.gg/BeVbkSV7kv">
-                            <img src="../static/images/Discord-Logo-Lede.png" height="50" alt="Discord">
+                            <i class="fab fa-discord"></i>
                         </a>
                     </div>
                 </td>
-                <td>
-                    <div class="Log-in">
-                        <button id="Log-in">Giriş Yap</button>
+                <td class="Head">
+                    <div>
+                        <a class="Login" href="http://127.0.0.1:5000/login">Giriş Yap</a>
                     </div>
                 </td>
-                <td>
-                    <div class="Sign-up">
-                        <button id="Sign-up">Kayıt Ol</button>
+                <td class="Head">
+                    <div>
+                        <a class="Login" href="Login/signup.html">Kayıt Ol</a>
                     </div>
                 </td>
             </tr>
         </table>
     </header>
     <main>
-        <div class="Sign">
-            <div class="Log-in-menu" id="">
-                <form>
-                    <h3 id="modal-close">X</h3>
-                    <label>E-posta</label>
-                    <input type="email" placeholder="E-posta" id="emaili"/>
-                    <label>Şifre</label>
-                    <input type="password" placeholder="Şifre" id="passwordi" autocomplete="on"/>
-                    <button class="form-button" type="submit" onclick="getInfo">Giriş Yap</button>
-                </form>
-            </div>
-            <div class="Sign-up-menu">
-                <form>
-                    <h3 id="sign-close">X</h3>
-                    <label>Kullanıcı Adı</label>
-                    <input type="text" placeholder="KullanıcıAdı" id="Name"/>
-                    <label>Şifre</label>
-                    <input type="password" placeholder="Şifre" autocomplete="on" id="password"/>
-                    <button id="SignUpButton" class="form-button" type="submit">Kayıt Ol</button>
-                </form>
-                <script src="../static/Login.js"></script>
-            </div>
-        </div>
         <section>
-            <div class="item">
+            <div class="item"> 
+                <div class="ite">
                     <a href="Seriler/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy.html">
-                    <img width="200" height="300" src="../static/Series/8aafeeafb0e6ec65c5a4ce30fb69b7e1.jpg">
-                    <p>The Story of an Onee-San Who Wants to Keep a High School Boy </p>
-                    <a class="tag" href="Tags/Comedy.html">Komedi</a>
-                    <a class="tag" href="Tags/SliceOfLife.html">Yaşamdan kesitler</a>
-                    <a class="tag" href="Tags/Romance.html">Romantizm</a>
-                </a>
+                        <img width="200" height="300" src="../static/Series/8aafeeafb0e6ec65c5a4ce30fb69b7e1.jpg">
+                        <div class="text">
+                            <p>The Story of an Onee-San Who Wants to Keep a High School Boy </p>
+                            <a class="link" href="links/Comedy.html">Komedi</a>
+                            <a class="link" href="links/SliceOfLife.html">Yaşamdan kesitler</a>
+                            <a class="link" href="links/Romance.html">Romantizm</a>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="item">
+                <div class="ite">
                     <a href="Seriler/TekitonaMaidnoOneesantoErasoudeIchizunaBocchan/TekitonaMaidnoOnee-santoErasoudeIchizunaBocchan.html">
-                    <img width="200" height="300" src="../static/Series/6269899851613060741-MiyamuraArt.jpg">
-                    <p>Tekito na Maid no Onee-san to Erasou de Ichizu na Bocchan</p>
-                    <a class="tag" href="Tags/Comedy.html">Komedi</a>
-                    <a class="tag" href="Tags/SliceOfLife.html">Yaşamdan kesitler</a>
-                    <a class="tag" href="Tags/Romance.html">Romantizm</a>
-                </a>
+                        <img width="200" height="300" src="../static/Series/6269899851613060741-MiyamuraArt.jpg">
+                        <div class="text">
+                            <p>Tekito na Maid no Onee-san to Erasou de Ichizu na Bocchan</p>
+                            <a class="link" href="links/Comedy.html">Komedi</a>
+                            <a class="link" href="links/SliceOfLife.html">Yaşamdan kesitler</a>
+                            <a class="link" href="links/Romance.html">Romantizm</a>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="item">
-                    <a href="Seriler/Bakapple/Bakapple.html">
-                    <img width="200" height="300" src="../static/Series/3d55e241c6db5fde25de494c37d49841.jpg">
-                    <p>Bakapple </p>
-                    <a class="tag" href="Tags/Comedy.html">Komedi</a>
-                    <a class="tag" href="Tags/Romance.html">Romantizm</a>
-                </a>
+                <div class="ite">
+                        <a href="Seriler/Bakapple/Bakapple.html">
+                        <img width="200" height="300" src="../static/Series/3d55e241c6db5fde25de494c37d49841.jpg">
+                        <div class="text">
+                            <p>Bakapple </p>
+                            <a class="link" href="links/Comedy.html">Komedi</a>
+                            <a class="link" href="links/Romance.html">Romantizm</a>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="item">
-                    <a href="Seriler/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy.html">
-                    <img width="200" height="300" src="../static/Series/8aafeeafb0e6ec65c5a4ce30fb69b7e1.jpg">
-                    <p>The Story of an Onee-San Who Wants to Keep a High School Boy </p>
-                    <a class="tag" href="Tags/Comedy.html">Komedi</a>
-                    <a class="tag" href="Tags/SliceOfLife.html">Yaşamdan kesitler</a>
-                    <a class="tag" href="Tags/Romance.html">Romantizm</a>
-                </a>
+                <div class="ite">
+                    <a class="link img" href="http://127.0.0.1:5000/02273">
+                        <img width="200"  height="300" src="../static/Series/7376a17ce52df5601816841a71850f52.jpg">
+                        <div class="text">
+                            <p>Abandoned Wife Has a New Husband<br></p>
+                            <a class="link" href="links/Drama.html">Drama <br></a>
+                            <a class="link" href="links/Fantasy.html">Fantazi <br></a>
+                            <a class="link" href="links/Romance.html">Romantizm</a>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="item">
-                    <a href="Seriler/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy.html">
-                    <img width="200" height="300" src="../static/Series/8aafeeafb0e6ec65c5a4ce30fb69b7e1.jpg">
-                    <p>The Story of an Onee-San Who Wants to Keep a High School Boy </p>
-                    <a href="Tags/Comedy.html">Komedi</a>
-                    <a href="Tags/SliceOfLife.html">Yaşamdan kesitler</a>
-                    <a href="Tags/Romance.html">Romantizm</a>
-                </a>
-            </div>
-            <div class="item">
-                    <a href="Seriler/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy/TheStoryofanOnee-sanWhoWantstoKeepaHighSchoolBoy.html">
-                    <img width="200" height="300" src="../static/Series/8aafeeafb0e6ec65c5a4ce30fb69b7e1.jpg">
-                    <p>The Story of an Onee-San Who Wants to Keep a High School Boy </p>
-                    <a href="Tags/Comedy.html">Komedi</a>
-                    <a href="Tags/SliceOfLife.html">Yaşamdan kesitler</a>
-                    <a href="Tags/Romance.html">Romantizm</a>
-                </a>
-            </div>
-
         </section>
     </main>
+    <aside>
+        <iframe class="Dframe" src="https://discord.com/widget?id=855468840237137931&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </aside>
 </div>
 
+<div class="offline">
+    İnternet bağlantınızda bir problem var, lütfen internet bağlantınızı kontrol edin.
+</div>
+<script>
+    const div = document.getElementById('offline')
+    window.addEventListener('online', () => {
+        div.style.display = 'none'
+    })
+    window.addEventListener('offline', () => {
+        div.style.display = 'block'
+    })
+</script>
+<div class="up">
+    <a href="#header">
+        <i class="material-icons md-48">expand_less</i>
+    </a>
+</div>
 </body>
 </html>

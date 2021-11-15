@@ -1,5 +1,16 @@
 .serieinfo {
     position: relative;
     left: 450px;
-    bottom: 100px;
+    bottom: 340px;
+}
+.first {
+    position: relative;
+    left: 720px;
+    bottom: 370px;
+}
+#EpisodeList {
+    text-align: left;
+    position: relative;
+    left: 25vw;
+    bottom: 400px;
 }

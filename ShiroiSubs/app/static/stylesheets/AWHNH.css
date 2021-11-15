@@ -1,3 +1,7 @@
 .serieinfo {
-    top: -450px;
+    bottom: 80px;
     left: 425px;}
+.first, #EpisodeList {
+    position: relative;
+    bottom: 100px;
+}
