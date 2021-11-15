@@ -1,7 +1,4 @@
 from flask import Flask, render_template, request, url_for, redirect
-from itsdangerous import Signer, BadSignature
-import random
-import os
 
 app = Flask(__name__)
 
@@ -61,8 +58,9 @@ def uploadnewepisode():
     return render_template("BolumYukle.html")
 
 
+# Seriler
 @app.route("/02273")
-def manga():
+def abandoned():
     return render_template("Seriler/Abandoned Wife Has a New Husband/AbandonedWifeHasaNewHusband.html")
 
 
@@ -81,7 +79,7 @@ def night():
     return render_template("Seriler/ANightTheEmperor/ANightTheEmperor.html")
 
 
-@app.route("/98637")
+@app.route("/98639")
 def bakapple():
     return render_template("Seriler/Bakapple/Bakapple.html")
 
@@ -156,20 +154,62 @@ def today():
     return render_template("Seriler/TodayLivingWithYou/TodayLivingWithYou.html")
 
 
-"""
-@app.route("/10666")
-def American():
-    return render_template("Seriler/")
+# Etiketler
+@app.route("/4517")
+def comedy():
+    return render_template("Tags/Comedy.html")
 
 
-@app.route("/91154")
-def American():
-    return render_template("Seriler/")
+@app.route("/2463")
+def drama():
+    return render_template("Tags/Drama.html")
 
 
-@app.route("/80225")
-def American():
-    return render_template("Seriler/")
+@app.route("/5994")
+def fantasy():
+    return render_template("Tags/Fantasy.html")
 
 
-"""
+@app.route("/9867")
+def manga():
+    return render_template("Tags/Manga.html")
+
+
+@app.route("/5922")
+def manwha():
+    return render_template("Tags/Manwha.html")
+
+
+@app.route("/7125")
+def manhua():
+    return render_template("Tags/Manhua.html")
+
+
+@app.route("/5041")
+def romance():
+    return render_template("Tags/Romance.html")
+
+
+@app.route("/5197")
+def shoujo():
+    return render_template("Tags/Shoujo.html")
+
+
+@app.route("/8459")
+def shounen():
+    return render_template("Tags/Shounen.html")
+
+
+@app.route("/0529")
+def sulice():
+    return render_template("Tags/SliceOfLife.html")
+
+
+@app.route("/9953")
+def tragedy():
+    return render_template("Tags/Tragedy.html")
+
+
+@app.route("/3783")
+def school():
+    return render_templates("Tags/SchoolLife.html")
