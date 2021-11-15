@@ -34,6 +34,7 @@ html, body {
     margin: 0;
     display: flex;
     overflow-x: hidden;
+    background-color: #222;
 }
   
 * {
@@ -44,7 +45,6 @@ html, body {
   
 .container {
     background-color: #222;
-    height: 100vh;
 }
   
 main {
@@ -309,7 +309,7 @@ main {
 aside {
     position: absolute;
     left: 25px;
-    top: 150px;
+    top: 30vh;
 }
   
 /* HAMBURGER */
@@ -322,14 +322,13 @@ aside {
   
 #Menu {
     display: none;
-}
-#Menu :hover {
-    cursor: pointer;
-}
-#Menu:checked ~ .Menu {
-    display: block;
+    &:hover {
+      cursor: pointer;}
+    &:checked ~ .Menu {
+      display: block;
   }
-  
+}
+
   /* UPLOAD */
   input {
     background-color: transparent;
@@ -361,29 +360,28 @@ aside {
     left: 60%;
   }
   
-  .item {
-    position: inherit;
-    display: grid;
-    border-style: solid;
-    border-color: gray;
-    border-radius: 2rem;
-    width: 220px;
-    height: 450px;
-    padding: 10px;
-    float: left;
-    margin: 10px;
-    overflow: auto;
-    overflow-x: hidden;
-    -webkit-animation-name: Hoverr;
-            animation-name: Hoverr;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    font-size: 20px;
-  }
-  .item a, .item p {
+.item {
+  position: inherit;
+  display: grid;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 2rem;
+  width: 220px;
+  height: 450px;
+  padding: 10px;
+  float: left;
+  margin: 10px;
+  overflow: auto;
+  overflow-x: hidden;
+  -webkit-animation-name: Hoverr;
+    animation-name: Hoverr;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  font-size: 20px;
+  a, p {
     color: #fff;
   }
-  .item:hover {
+  &:hover {
     cursor: pointer;
     -webkit-animation-name: Hover;
             animation-name: Hover;
@@ -391,13 +389,13 @@ aside {
             animation-duration: 2s;
     background-color: black;
   }
-  .item::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     width: 6px;
   }
-  .item a:hover, .item img {
+  a:hover, img:hover {
     cursor: pointer;
   }
-  .item .img {
+  .img {
     width: 200px;
     height: 300px;
   }
@@ -405,9 +403,9 @@ aside {
   .ite {
     padding-left: 10px;
   }
-  
-  /* LOGIN */
-  @-webkit-keyframes Close {
+}
+/* LOGIN */
+@keyframes Close {
     from {
       background-color: gray;
     }
@@ -415,45 +413,17 @@ aside {
       background-color: red;
     }
   }
-  @keyframes Close {
-    from {
-      background-color: gray;
-    }
-    to {
-      background-color: red;
-    }
+@keyframes Submit {
+  from {
+    background-color: #121212;
+    padding: 0.5rem;
   }
-  @-webkit-keyframes Submit {
-    from {
-      background-color: #121212;
-      padding: 0.5rem;
-    }
-    to {
-      background-color: gray;
-      padding: 1rem;
-    }
+  to {
+    background-color: gray;
+    padding: 1rem;
   }
-  @keyframes Submit {
-    from {
-      background-color: #121212;
-      padding: 0.5rem;
-    }
-    to {
-      background-color: gray;
-      padding: 1rem;
-    }
-  }
-  @-webkit-keyframes Submitr {
-    from {
-      background-color: gray;
-      padding: 1rem;
-    }
-    to {
-      background-color: #121212;
-      padding: 0.5rem;
-    }
-  }
-  @keyframes Submitr {
+}
+@keyframes Submitr {
     from {
       background-color: gray;
       padding: 1rem;

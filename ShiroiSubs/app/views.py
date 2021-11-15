@@ -61,3 +61,6 @@ def uploadnewepisode():
 @app.route("/02273")
 def manga():
     return render_template("Seriler/Abandoned Wife Has a New Husband/AbandonedWifeHasaNewHusband.html")
+@app.route("/98637")
+def Amerika():
+    return render_template("Seriler/AmericanWeebinJapan/AmericanWeebinJapan.html")

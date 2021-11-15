@@ -2,64 +2,84 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="../item.css">
-    <style>
-        .thumbnail {width: 300px; height: 300px; padding-bottom: 20px;}
-        .serieinfo {margin-top: -300px; width: 40%}
-    </style>
+    <title>American Weeb in Japan</title>
+    <script src="https://kit.fontawesome.com/9d73c3cf07.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../static/images/Logo.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../../static/stylesheets/Main.css">
+    <link rel="stylesheet" type="text/css" href="../../../static/stylesheets/Info.css">
+    <link rel="stylesheet" type="text/css" href="../../../static/stylesheets/AWJ.css">
 </head>
 <body>
-
 <div class="container">
-    <header>
+    <header id="header">
         <table>
             <tr>
                 <td>
                     <div class="logo">
-                        <a href="../../main.html">
-                            <img src="../../../static/images/6277234851615291468-MiyamuraArtDark.png" alt="ShiroiSubs">
+                        <a href="http://127.0.0.1:5000">
+                            <img src="../static/images/Logo.png" alt="ShiroiSubs">
                         </a>
                     </div>
                 </td>
+                <td id="Menu">
+                    <div class="Menu" id="Menu">
+                        <input class="men" type="checkbox">
+                    </div>
+                </td>
+                <!--<script>
+                    document.getElementById("Menu").addEventListener("click", function(){
+                        document.querySelector(".Head").style.display = "block";
+                    })
+                </script> -->
                 <td>
-                    <div class="Seriler">
-                        <a href=>
-                            Seriler
-                        </a>
+                    <div class="Seriler Head">
+                        <a href="seriler.html">Seriler</a>
                     </div>
                 </td>
                 <td>
-                    <div class="Devam">
-                        <a href="../../DevamEdenler.html">
-                            Devam Edenler
-                        </a>
+                    <div class="Duyurular Head">
+                        <a href="Duyurular.html">Duyurular</a>
                     </div>
                 </td>
                 <td>
-                    <div class="Bitti">
-                        <a href="../../Bitti.html">
-                            Biten Seriler
-                        </a>
+                    <div class="Devam Head">
+                        <a href="DevamEdenler.html">Devam Edenler</a>
                     </div>
                 </td>
                 <td>
-                    <div class="discord">
+                    <div class="Bitti Head">
+                        <a href="Bitti.html">Biten Seriler</a>
+
+                    </div>
+                </td>
+                <td>
+                    <div class="discord Head">
                         <a href="https://discord.gg/BeVbkSV7kv">
-                            <img src="../../../static/images/Discord-Logo-Lede.png" height="40" alt="Discord">
+                            <i class="fab fa-discord"></i>
                         </a>
+                    </div>
+                </td>
+                <td class="Head">
+                    <div>
+                        <a class="Login" href="Login/login.html">Giriş Yap</a>
+                    </div>
+                </td>
+                <td class="Head">
+                    <div>
+                        <a class="Login" href="Login/signup.html">Kayıt Ol</a>
                     </div>
                 </td>
             </tr>
         </table>
     </header>
-    <aside>
-
-    </aside>
     <main>
+        <div>
+            <img id="big-thumb" src="../../../static/Series/adf9bf8b-a0c1-4330-b805-15cc4311fc8b.png">
+        </div>
         <div class="wrap-box">
-            <div class="kapak">
-                <img class="thumbnail" src="../../../static/Series/d62b46671fa92180deaa393819345bbc.jpg" alt="Thumbnail">
+            <div class="thumbnail">
+                <img width="300px" id="thumbnail" src="../../../static/Series/adf9bf8b-a0c1-4330-b805-15cc4311fc8b.png" alt="Thumbnail">
             </div>
             <div class="serieinfo">
                 <table>
@@ -106,10 +126,11 @@
                 </table>
             </div>
         </div>
-        <button>
+        <button class="first">
             <a href="1.bolum.html">İlk bölümü oku</a>
         </button>
         <div>
+        <div id="EpisodeList">
             <h1>Bölümler</h1>
             <table class="bolumlr">
                 <tr>
@@ -135,6 +156,27 @@
             </table>
         </div>
     </main>
+    <aside>
+        <iframe class="Dframe" src="https://discord.com/widget?id=855468840237137931&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </aside>
+</div>
+
+<div class="offline">
+    İnternet bağlantınızda bir problem var, lütfen internet bağlantınızı kontrol edin.
+</div>
+<script>
+    const div = document.getElementById('offline')
+    window.addEventListener('online', () => {
+        div.style.display = 'none'
+    })
+    window.addEventListener('offline', () => {
+        div.style.display = 'block'
+    })
+</script>
+<div class="up">
+    <a href="#header">
+        <i class="material-icons md-48">expand_less</i>
+    </a>
 </div>
 </body>
 </html>

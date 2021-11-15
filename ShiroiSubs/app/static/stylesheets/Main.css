@@ -66,6 +66,7 @@ html, body {
   margin: 0;
   display: flex;
   overflow-x: hidden;
+  background-color: #222;
 }
 
 * {
@@ -76,7 +77,6 @@ html, body {
 
 .container {
   background-color: #222;
-  height: 100vh;
 }
 
 main {
@@ -408,7 +408,7 @@ button:hover, button:hover, .Login:hover, .Login:hover {
 aside {
   position: absolute;
   left: 25px;
-  top: 150px;
+  top: 30vh;
 }
 
 /* HAMBURGER */
@@ -422,11 +422,9 @@ aside {
 #Menu {
   display: none;
 }
-
-#Menu :hover {
+#Menu:hover {
   cursor: pointer;
 }
-
 #Menu:checked ~ .Menu {
   display: block;
 }
@@ -496,11 +494,9 @@ section {
   animation-duration: 1s;
   font-size: 20px;
 }
-
 .item a, .item p {
   color: #fff;
 }
-
 .item:hover {
   cursor: pointer;
   -webkit-animation-name: Hover;
@@ -509,21 +505,17 @@ section {
   animation-duration: 2s;
   background-color: black;
 }
-
 .item::-webkit-scrollbar {
   width: 6px;
 }
-
-.item a:hover, .item img {
+.item a:hover, .item img:hover {
   cursor: pointer;
 }
-
 .item .img {
   width: 200px;
   height: 300px;
 }
-
-.ite {
+.item .ite {
   padding-left: 10px;
 }
 
