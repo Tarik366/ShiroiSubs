@@ -1,0 +1,92 @@
+@media screen and (max-width: 1280px) {
+  header {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main {
+    width: 100vw;
+  }
+
+  header {
+    width: 100vw;
+    background-color: #616161;
+    height: 100px;
+  }
+
+  input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    border-radius: 5px;
+  }
+  input[type=checkbox]:after {
+    content: "\f0c9";
+    background-image: url("../images/Bar.png");
+  }
+  input[type=checkbox]:checked .men ~ .Head {
+    display: block;
+  }
+
+  table td {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    animation-name: none;
+    animation-duration: 0s;
+    padding-left: 1rem;
+  }
+
+  .Head {
+    display: none;
+  }
+
+  #hamtd {
+    display: flex;
+    position: relative;
+    bottom: 150px;
+    left: 80vw;
+    flex-direction: row;
+  }
+  #hamtd:hover {
+    padding: 0;
+    transform: scale(1);
+    cursor: pointer;
+  }
+
+  .Dframe {
+    display: none;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 10rem;
+  }
+  section .item {
+    position: relative;
+    right: 53vw;
+    width: 85vw;
+    height: 20rem;
+    margin: 0 2rem 1rem;
+    overflow: hidden;
+    float: none;
+  }
+  section .item .thumbnail {
+    position: relative;
+    left: -0.5rem;
+    width: 12rem;
+    height: 19rem;
+  }
+  section .item .text {
+    position: relative;
+    width: 12rem;
+    left: 13rem;
+    bottom: 20rem;
+  }
+}
+
+/*# sourceMappingURL=mobil.css.map */

@@ -213,3 +213,13 @@ def tragedy():
 @app.route("/3783")
 def school():
     return render_template("Tags/SchoolLife.html")
+
+
+@app.route("/8114")
+def isekai():
+    return render_template("Tags/isekai.html")
+
+
+@app.route("/5057")
+def magic():
+    return render_template("Tags/magic.html")

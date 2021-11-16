@@ -56,85 +56,6 @@ main {
     transition: width 2s;
     position: relative;
 }
-  
-@media screen and (max-width: 1280px) {
-    header {
-      width: 100vw;
-    }
-}
-  /* @media screen and (max-width: 700px) {
-    main {
-      width: 1920px;
-    }
-    header {
-      width: 100vw;
-      background-color: #616161;
-      height: 100px;}
-    i.fas {
-      font-size: 40px;
-    }
-    input[type="checkbox"] {
-      appearance: none;
-      -webkit-appearance: none;
-      height: 20px;
-      width: 20px;
-      background-color: gray;
-      border-radius: 5px;
-  
-      &:after {
-        content: "\f0c9";
-        background-image: url("../images/Bar.png");
-      }
-  
-      &:checked {
-        .men ~ .Head {
-          display: block;
-        }
-      }
-    }
-    table td {
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 1rem;
-      animation-name: none;
-      animation-duration: 0s;
-      padding-left: 1rem;
-    }
-    .Head {
-      display: none;
-    }
-    .Dframe {
-      display: none;
-    }
-    section {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      left: -1rem;
-  
-      .item {
-        width: 21%;
-        height: 20rem;
-        margin: 0 2rem 1rem;
-        overflow: hidden;
-        float: none;
-  
-        .thumbnail {
-          position: relative;
-          left: -0.5rem;
-          width: 12rem;
-          height: 19rem;
-        }
-  
-        .text {
-          position: relative;
-          width: 12rem;
-          left: 13rem;
-          bottom: 20rem;
-        }
-      }
-    }
-  } */
 
   /* HEADER */
   body {
@@ -148,16 +69,14 @@ main {
     width: 1920px;
     isolation: isolate;
     td {
+      #hamtd {
+        display: none;
+      }
         padding-left: 20px;
         transition: 1s;
         &:hover {
             transform: scale(1.2);
           }
-        .light {
-            display: none;
-            -webkit-animation: disr 2s;
-                animation: disr 2s;
-        }
     }
 }
   @keyframes dis {
@@ -219,7 +138,7 @@ main {
 }
   
   .darkmode-toggle {
-    font-family: "Material Icons";
+    font-family: "Material Icons", serif;
   }
   
   /* UP */
@@ -508,6 +427,7 @@ aside {
     color: white;
   }
   
-  .darkmode--activated .item p, .darkmode--activated .item a {
-    color: black;
-  }
+.darkmode--activated .item p, .darkmode--activated .item a {color: black;}
+td#hamtd {
+  display: none;
+}
