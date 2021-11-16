@@ -212,4 +212,4 @@ def tragedy():
 
 @app.route("/3783")
 def school():
-    return render_templates("Tags/SchoolLife.html")
+    return render_template("Tags/SchoolLife.html")
