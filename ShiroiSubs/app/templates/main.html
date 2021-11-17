@@ -73,6 +73,60 @@
         <span class="material-icons">menu</span>
     </div>
     <main>
+        <section class="slider">
+            <h1>
+                HAFTANIN ÖNERİLERİ
+            </h1>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="slitem">
+                        <div class="ite">
+                            <a class="link img" href="http://127.0.0.1:5000/02273">
+                                <img width="260"  height="400" src="../static/Series/abandoned.jpg">
+                                <div class="text">
+                                    <p>Abandoned Wife Has a New Husband<br></p>
+                                    <a class="link" href="Tags/Drama.html">Drama <br></a>
+                                    <a class="link" href="Tags/Fantasy.html">Fantazi <br></a>
+                                    <a class="link" href="Tags/Romance.html">Romantizm</a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                  <div class="swiper-slide">
+                      Slide 2
+                    </div>
+                  <div class="swiper-slide">
+                      Slide 3
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev sb"></div>
+                <div class="swiper-button-next sb"></div>
+              </div>
+
+            <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    // Optional parameters
+                    direction: 'horizontal',
+                    loop: true,
+                  
+                    // Navigation arrows
+                    navigation: {
+                      nextEl: '.swiper-button-next',
+                      prevEl: '.swiper-button-prev',
+                    },
+                  });
+            </script>
+        </section>
         <section>
             <div class="item">
                 <div class="ite">

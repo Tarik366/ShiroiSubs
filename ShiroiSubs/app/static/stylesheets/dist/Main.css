@@ -433,3 +433,43 @@ section {
 .hamdiv {
   display: none;
 }
+
+.slider h1 {
+  position: relative;
+  left: 8vw;
+  bottom: 5vh;
+  font-size: 50px;
+}
+
+.swiper {
+  position: absolute;
+  right: 100px;
+  bottom: 6vh;
+}
+
+.slitem {
+  border-style: solid;
+  border-color: gray;
+  border-radius: 20px;
+}
+.slitem img {
+  padding: 1rem 1rem 1rem 4rem;
+}
+.slitem .text {
+  font-size: 40px;
+  position: absolute;
+  left: 370px;
+  bottom: 100px;
+}
+
+.swiper-button-prev:after {
+  padding-left: 2rem;
+  font-family: "Material Icons" !important;
+  content: "arrow_back_ios" !important;
+}
+
+.swiper-button-next:after {
+  padding-right: 2rem;
+  font-family: "Material Icons" !important;
+  content: "arrow_forward_ios" !important;
+}
