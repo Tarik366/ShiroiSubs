@@ -41,15 +41,13 @@
   .Head {
     display: none;
   }
-  #hamtd {
+  .hamdiv {
     display: flex;
     position: relative;
-    bottom: 150px;
-    left: 80vw;
+    bottom: 125px;
+    left: 85vw;
     flex-direction: row;
     &:hover {
-      padding: 0;
-      transform: scale(1);
       cursor: pointer;
     }
   }
