@@ -57,7 +57,7 @@ def newepisode():
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-@app.route("/yeni-bolum-tamam")
+@app.route("/yeni-bolum-tamam", methods=['POST'])
 def okeyepisode():
     target = os.path.join(APP_ROOT, 'images/')
     print(target)
