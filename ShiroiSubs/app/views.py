@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, url_for, redirect
 
 app = Flask(__name__)
@@ -49,13 +50,29 @@ def admin():
     return render_template("v55byo0k29.html")
 
 
-@app.route("/yeni-bolum", methods=["GET", "POST"])
-def uploadnewepisode():
-    if request.method == "POST":
-        if request.files:
-            image = request.files["image"]
-            print(image)
+@app.route("/yeni-bolum")
+def newepisode():
     return render_template("BolumYukle.html")
+
+
+APP_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+@app.route("/yeni-bolum-tamam")
+def okeyepisode():
+    target = os.path.join(APP_ROOT, 'images/')
+    print(target)
+    
+    if not os.path.isdir(target):
+        os.mkdir(target)
+    
+    for file in request.files.getlist("file"):
+        print(file)
+        filename = file.filename
+        destination = "/".join([target, filename])
+        print(destination)
+        file.save(destination)
+    
+    return render_template("bolum-tamam.html")
 
 
 # Seriler
@@ -223,3 +240,6 @@ def isekai():
 @app.route("/5057")
 def magic():
     return render_template("Tags/magic.html")
+
+if __name__=="__main__":
+    app.run(port=5000, debug=True)

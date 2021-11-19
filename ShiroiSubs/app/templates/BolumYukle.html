@@ -8,8 +8,9 @@
 </head>
 <body>
     <h1></h1>
-    <form action="" method="post">
-        <input type="file">
+    <form action="{{ url_for('upload')}}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="episode" accept="image/*" multiple>
+        <input type="submit" value="Gönder">
     </form>
 </body>
 </html>

@@ -1,35 +1,45 @@
 @-webkit-keyframes Logo {
   from {
+    display: -webkit-box;
     display: flex;
   }
   to {
     display: none;
   }
 }
+
 @keyframes Logo {
   from {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   to {
     display: none;
   }
 }
+
 @-webkit-keyframes Logor {
   from {
     display: none;
   }
   to {
+    display: -webkit-box;
     display: flex;
   }
 }
+
 @keyframes Logor {
   from {
     display: none;
   }
   to {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
+
 @-webkit-keyframes A {
   from {
     padding-left: 0;
@@ -38,6 +48,7 @@
     padding-left: 2rem;
   }
 }
+
 @keyframes A {
   from {
     padding-left: 0;
@@ -46,6 +57,7 @@
     padding-left: 2rem;
   }
 }
+
 @-webkit-keyframes Ar {
   from {
     padding-left: 2rem;
@@ -54,6 +66,7 @@
     padding-left: 0;
   }
 }
+
 @keyframes Ar {
   from {
     padding-left: 2rem;
@@ -62,8 +75,11 @@
     padding-left: 0;
   }
 }
+
 html, body {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow-x: hidden;
   background-color: #222;
@@ -85,6 +101,7 @@ main {
 }
 
 #Logo {
+  -webkit-transition: width 2s;
   transition: width 2s;
   position: relative;
 }
@@ -101,15 +118,20 @@ header {
   width: 1920px;
   isolation: isolate;
 }
+
 header td {
   padding-left: 20px;
+  -webkit-transition: 1s;
   transition: 1s;
 }
+
 header td #hamtd {
   display: none;
 }
+
 header td:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @-webkit-keyframes dis {
@@ -129,6 +151,7 @@ header td:hover {
     display: none;
   }
 }
+
 @-webkit-keyframes disr {
   from {
     display: none;
@@ -137,6 +160,7 @@ header td:hover {
     display: block;
   }
 }
+
 @keyframes disr {
   from {
     display: none;
@@ -145,6 +169,7 @@ header td:hover {
     display: block;
   }
 }
+
 /* BUTTON */
 @-webkit-keyframes Button {
   from {
@@ -166,6 +191,7 @@ header td:hover {
     padding: 1.2rem;
   }
 }
+
 @-webkit-keyframes Buttonr {
   from {
     background-color: gray;
@@ -176,6 +202,7 @@ header td:hover {
     padding: 1.2rem;
   }
 }
+
 @keyframes Buttonr {
   from {
     background-color: gray;
@@ -186,6 +213,7 @@ header td:hover {
     padding: 1.2rem;
   }
 }
+
 button, .Login {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -195,6 +223,7 @@ button, .Login {
   border-color: white;
   color: white;
 }
+
 button:hover, button:hover, .Login:hover, .Login:hover {
   padding: 1.2rem;
   cursor: pointer;
@@ -226,6 +255,7 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: #000;
   }
 }
+
 @-webkit-keyframes upr {
   from {
     background-color: #000;
@@ -234,6 +264,7 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: #00000050;
   }
 }
+
 @keyframes upr {
   from {
     background-color: #000;
@@ -242,6 +273,7 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: #00000050;
   }
 }
+
 .up {
   position: fixed;
   left: 5rem;
@@ -255,9 +287,11 @@ button:hover, button:hover, .Login:hover, .Login:hover {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
+
 .up i {
   font-size: 70px;
 }
+
 .up:hover {
   background-color: #000;
   -webkit-animation-name: upi;
@@ -283,6 +317,7 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: #8c9eff;
   }
 }
+
 @-webkit-keyframes Discordr {
   from {
     background-color: #8c9eff;
@@ -291,6 +326,7 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: transparent;
   }
 }
+
 @keyframes Discordr {
   from {
     background-color: #8c9eff;
@@ -299,6 +335,7 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: transparent;
   }
 }
+
 .discord {
   border-radius: 50%;
   padding: 0.2rem;
@@ -312,10 +349,12 @@ button:hover, button:hover, .Login:hover, .Login:hover {
   font-size: 30px !important;
   text-align: center;
 }
+
 .discord i {
   position: relative;
   top: 0.3rem;
 }
+
 .discord:hover {
   -webkit-animation-name: Discord;
   animation-name: Discord;
@@ -342,9 +381,11 @@ aside {
 #Menu {
   display: none;
 }
+
 #Menu:hover {
   cursor: pointer;
 }
+
 #Menu:checked ~ .Menu {
   display: block;
 }
@@ -374,6 +415,7 @@ input {
     background-color: black;
   }
 }
+
 @-webkit-keyframes Hoverr {
   from {
     background-color: black;
@@ -382,6 +424,7 @@ input {
     background-color: #222;
   }
 }
+
 @keyframes Hoverr {
   from {
     background-color: black;
@@ -390,6 +433,7 @@ input {
     background-color: #222;
   }
 }
+
 section {
   position: relative;
   left: 50%;
@@ -398,6 +442,7 @@ section {
 
 .item {
   position: inherit;
+  display: -ms-grid;
   display: grid;
   border-style: solid;
   border-color: gray;
@@ -415,9 +460,11 @@ section {
   animation-duration: 1s;
   font-size: 20px;
 }
+
 .item a, .item p {
   color: #fff;
 }
+
 .item:hover {
   cursor: pointer;
   -webkit-animation-name: Hover;
@@ -426,16 +473,20 @@ section {
   animation-duration: 2s;
   background-color: black;
 }
+
 .item::-webkit-scrollbar {
   width: 6px;
 }
+
 .item a:hover, .item img:hover {
   cursor: pointer;
 }
+
 .item .img {
   width: 200px;
   height: 300px;
 }
+
 .item .ite {
   padding-left: 10px;
 }
@@ -457,6 +508,7 @@ section {
     background-color: red;
   }
 }
+
 @-webkit-keyframes Submit {
   from {
     background-color: #121212;
@@ -467,6 +519,7 @@ section {
     padding: 1rem;
   }
 }
+
 @keyframes Submit {
   from {
     background-color: #121212;
@@ -477,6 +530,7 @@ section {
     padding: 1rem;
   }
 }
+
 @-webkit-keyframes Submitr {
   from {
     background-color: gray;
@@ -487,6 +541,7 @@ section {
     padding: 0.5rem;
   }
 }
+
 @keyframes Submitr {
   from {
     background-color: gray;
@@ -497,6 +552,7 @@ section {
     padding: 0.5rem;
   }
 }
+
 .fname, .email, .pw {
   margin: 20px;
 }
@@ -515,11 +571,16 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: rgba(0, 0, 0, 0.548);
   color: #000000;
   z-index: 10;
+  -webkit-transition: ease;
   transition: ease;
 }
 
@@ -527,8 +588,13 @@ section {
   z-index: 20;
   position: relative;
   min-width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 2rem;
   background-color: var(--DarkMain);
   color: white;
@@ -597,9 +663,11 @@ section {
   border-color: gray;
   border-radius: 20px;
 }
+
 .slitem img {
   padding: 1rem 1rem 1rem 4rem;
 }
+
 .slitem .text {
   font-size: 40px;
   position: absolute;
@@ -610,13 +678,13 @@ section {
 .swiper-button-prev:after {
   padding-left: 2rem;
   font-family: "Material Icons" !important;
-  content: "arrow_back_ios" !important;
+  content: 'arrow_back_ios' !important;
 }
 
 .swiper-button-next:after {
   padding-right: 2rem;
   font-family: "Material Icons" !important;
-  content: "arrow_forward_ios" !important;
+  content: 'arrow_forward_ios' !important;
 }
 
 .avatar {
@@ -628,19 +696,25 @@ section {
   padding: 1rem;
   border-radius: 1rem;
   background-color: #616161;
+  -webkit-transition: width 2s, height 2s;
   transition: width 2s, height 2s;
 }
+
 .avatar h4 {
   display: none;
 }
+
 .avatar:hover {
   width: 20rem;
   height: 30rem;
 }
+
 .avatar:hover a {
   position: relative;
   top: 3rem;
 }
+
 .avatar:hover a h4 {
   display: block;
-}/*# sourceMappingURL=Main.css.map */
+}
+/*# sourceMappingURL=Main.css.map */

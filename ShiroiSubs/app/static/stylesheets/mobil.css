@@ -1,21 +1,19 @@
-@charset "UTF-8";
 @media screen and (max-width: 1280px) {
   header {
     width: 100vw;
   }
 }
+
 @media screen and (max-width: 1000px) {
   main {
     width: 100vw;
   }
-
   header {
     width: 100vw;
     background-color: #616161;
     height: 100px;
   }
-
-  input[type=checkbox] {
+  input[type="checkbox"] {
     -moz-appearance: none;
          appearance: none;
     -webkit-appearance: none;
@@ -24,17 +22,21 @@
     background-color: gray;
     border-radius: 5px;
   }
-  input[type=checkbox]:after {
-    content: "";
+  input[type="checkbox"]:after {
+    content: "\f0c9";
     background-image: url("../images/Bar.png");
   }
-  input[type=checkbox]:checked .men ~ .Head {
+  input[type="checkbox"]:checked .men ~ .Head {
     display: block;
   }
-
   table td {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 1rem;
     -webkit-animation-name: none;
             animation-name: none;
@@ -42,29 +44,35 @@
             animation-duration: 0s;
     padding-left: 1rem;
   }
-
   .Head {
     display: none;
   }
-
   .hamdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     bottom: 125px;
     left: 85vw;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .hamdiv:hover {
     cursor: pointer;
   }
-
   .Dframe {
     display: none;
   }
-
   section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
     right: 10rem;
   }
@@ -89,4 +97,5 @@
     left: 13rem;
     bottom: 20rem;
   }
-}/*# sourceMappingURL=mobil.css.map */
+}
+/*# sourceMappingURL=mobil.css.map */

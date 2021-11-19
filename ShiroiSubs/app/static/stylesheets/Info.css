@@ -105,7 +105,8 @@ h1 {
   clip: rect(0, auto, auto, 0);
   -webkit-clip-path: inset(0 0);
   clip-path: inset(0 0);
-  filter: blur(5px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   left: 0;
   top: 0;
   z-index: -1;
@@ -115,4 +116,5 @@ h1 {
 
 header {
   margin: 0;
-}/*# sourceMappingURL=Info.css.map */
+}
+/*# sourceMappingURL=Info.css.map */
