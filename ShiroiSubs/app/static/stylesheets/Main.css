@@ -617,4 +617,30 @@ section {
   padding-right: 2rem;
   font-family: "Material Icons" !important;
   content: "arrow_forward_ios" !important;
+}
+
+.avatar {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 0rem;
+  right: 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #616161;
+  transition: width 2s, height 2s;
+}
+.avatar h4 {
+  display: none;
+}
+.avatar:hover {
+  width: 20rem;
+  height: 30rem;
+}
+.avatar:hover a {
+  position: relative;
+  top: 3rem;
+}
+.avatar:hover a h4 {
+  display: block;
 }/*# sourceMappingURL=Main.css.map */
