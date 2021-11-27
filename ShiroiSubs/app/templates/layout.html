@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>ShiroiSubs</title>
+    <script src="https://kit.fontawesome.com/9d73c3cf07.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../static/images/Logo.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Main.css">
+    <link rel="stylesheet" type="text/css" href="../static/stylesheets/mobil.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+<body>
+<div class="container">
+    <header id="header">
+        <table>
+            <tr>
+                <td>
+                    <div class="logo">
+                        <a href="main.html">
+                            <img src="../static/images/Logo.png" alt="ShiroiSubs">
+                        </a>
+                    </div>
+                </td>
+                <!--<script>
+                    document.getElementById("Menu").addEventListener("click", function(){
+                        document.querySelector(".Head").style.display = "block";
+                    })
+                </script> -->
+                <td>
+                    <div class="Seriler Head">
+                        <a href="http://127.0.0.1:5000/seriler">Seriler</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="Duyurular Head">
+                        <a href="http://127.0.0.1:5000/duyuru">Duyurular</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="Devam Head">
+                        <a href="http://127.0.0.1:5000/devam">Devam Edenler</a>
+                    </div>
+                </td>
+                <td>
+                    <div class="Bitti Head">
+                        <a href="http://127.0.0.1:5000/bitti">Biten Seriler</a>
+
+                    </div>
+                </td>
+                <td>
+                    <div class="discord Head">
+                        <a href="https://discord.gg/BeVbkSV7kv">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    {% block body_content %}
+    {% endblock %}
+
+    <aside>
+        <iframe class="Dframe" src="https://discord.com/widget?id=855468840237137931&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </aside>
+</div>
+<script>
+    const div = document.getElementById('offline')
+    window.addEventListener('online', () => {
+        div.style.display = 'none'
+    })
+    window.addEventListener('offline', () => {
+        div.style.display = 'block'
+    })
+</script>
+<div class="up">
+    <a href="#header">
+        <i class="material-icons md-48">expand_less</i>
+    </a>
+</div>
+</body>
+</html>

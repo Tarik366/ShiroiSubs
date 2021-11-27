@@ -7,7 +7,6 @@
     display: none;
   }
 }
-
 @keyframes Logo {
   from {
     display: -webkit-box;
@@ -18,7 +17,6 @@
     display: none;
   }
 }
-
 @-webkit-keyframes Logor {
   from {
     display: none;
@@ -28,7 +26,6 @@
     display: flex;
   }
 }
-
 @keyframes Logor {
   from {
     display: none;
@@ -39,7 +36,6 @@
     display: flex;
   }
 }
-
 @-webkit-keyframes A {
   from {
     padding-left: 0;
@@ -48,7 +44,6 @@
     padding-left: 2rem;
   }
 }
-
 @keyframes A {
   from {
     padding-left: 0;
@@ -57,7 +52,6 @@
     padding-left: 2rem;
   }
 }
-
 @-webkit-keyframes Ar {
   from {
     padding-left: 2rem;
@@ -66,7 +60,6 @@
     padding-left: 0;
   }
 }
-
 @keyframes Ar {
   from {
     padding-left: 2rem;
@@ -75,13 +68,12 @@
     padding-left: 0;
   }
 }
-
 html, body {
+  overflow-x: hidden;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: hidden;
   background-color: #222;
 }
 
@@ -97,7 +89,6 @@ html, body {
 
 main {
   float: left;
-  overflow-x: visible;
 }
 
 #Logo {
@@ -108,14 +99,15 @@ main {
 
 /* HEADER */
 body {
-  width: 1920px;
+  width: 100vw;
   margin: 0;
+  overflow-y: unset;
 }
 
 header {
   background-color: #616161;
   margin: 0 0 2rem;
-  width: 1920px;
+  width: 100vw;
   isolation: isolate;
 }
 
@@ -131,7 +123,7 @@ header td #hamtd {
 
 header td:hover {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 @-webkit-keyframes dis {
@@ -142,7 +134,6 @@ header td:hover {
     display: none;
   }
 }
-
 @keyframes dis {
   from {
     display: block;
@@ -151,7 +142,6 @@ header td:hover {
     display: none;
   }
 }
-
 @-webkit-keyframes disr {
   from {
     display: none;
@@ -160,7 +150,6 @@ header td:hover {
     display: block;
   }
 }
-
 @keyframes disr {
   from {
     display: none;
@@ -169,7 +158,6 @@ header td:hover {
     display: block;
   }
 }
-
 /* BUTTON */
 @-webkit-keyframes Button {
   from {
@@ -191,7 +179,6 @@ header td:hover {
     padding: 1.2rem;
   }
 }
-
 @-webkit-keyframes Buttonr {
   from {
     background-color: gray;
@@ -202,7 +189,6 @@ header td:hover {
     padding: 1.2rem;
   }
 }
-
 @keyframes Buttonr {
   from {
     background-color: gray;
@@ -213,7 +199,6 @@ header td:hover {
     padding: 1.2rem;
   }
 }
-
 button, .Login {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -255,7 +240,6 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: #000;
   }
 }
-
 @-webkit-keyframes upr {
   from {
     background-color: #000;
@@ -264,7 +248,6 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: #00000050;
   }
 }
-
 @keyframes upr {
   from {
     background-color: #000;
@@ -273,7 +256,6 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: #00000050;
   }
 }
-
 .up {
   position: fixed;
   left: 5rem;
@@ -317,7 +299,6 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: #8c9eff;
   }
 }
-
 @-webkit-keyframes Discordr {
   from {
     background-color: #8c9eff;
@@ -326,7 +307,6 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: transparent;
   }
 }
-
 @keyframes Discordr {
   from {
     background-color: #8c9eff;
@@ -335,7 +315,6 @@ button:hover, button:hover, .Login:hover, .Login:hover {
     background-color: transparent;
   }
 }
-
 .discord {
   border-radius: 50%;
   padding: 0.2rem;
@@ -415,7 +394,6 @@ input {
     background-color: black;
   }
 }
-
 @-webkit-keyframes Hoverr {
   from {
     background-color: black;
@@ -424,7 +402,6 @@ input {
     background-color: #222;
   }
 }
-
 @keyframes Hoverr {
   from {
     background-color: black;
@@ -433,7 +410,6 @@ input {
     background-color: #222;
   }
 }
-
 section {
   position: relative;
   left: 50%;
@@ -459,6 +435,72 @@ section {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   font-size: 20px;
+}
+
+.du {
+  padding: 0.2rem 1rem;
+  border: solid gray 5px;
+  border-radius: 1rem;
+}
+
+#series #A .item, #series #B .item, #series #C .item, #series #D .item, #series #E .item, #series #F .item, #series #G .item, #series #H .item, #series #I .item, #series #J .item, #series #K .item, #series #L .item, #series #M .item, #series #N .item, #series #O .item, #series #P .item, #series #Q .item, #series #R .item, #series #S .item, #series #T .item, #series #U .item, #series #V .item, #series #W .item, #series #X .item, #series #Y .item, #series #Z .item {
+  width: 700px;
+  height: 80px;
+  overflow-y: hidden;
+}
+.heads {
+  position: relative;
+}
+#series #A .item h3, #series #B .item h3, #series #C .item h3, #series #D .item h3, #series #E .item h3, #series #F .item h3, #series #G .item h3, #series #H .item h3, #series #I .item h3, #series #J .item h3, #series #K .item h3, #series #L .item h3, #series #M .item h3, #series #N .item h3, #series #O .item h3, #series #P .item h3, #series #Q .item h3, #series #R .item h3, #series #S .item h3, #series #T .item h3, #series #U .item h3, #series #V .item h3, #series #W .item h3, #series #X .item h3, #series #Y .item h3, #series #Z .item h3 {
+  width: 1rem;
+}
+#series #A .item .text, #series #B .item .text, #series #C .item .text, #series #D .item .text, #series #E .item .text, #series #F .item .text, #series #G .item .text, #series #H .item .text, #series #I .item .text, #series #J .item .text, #series #K .item .text, #series #L .item .text, #series #M .item .text, #series #N .item .text, #series #O .item .text, #series #P .item .text, #series #Q .item .text, #series #R .item .text, #series #S .item .text, #series #T .item .text, #series #U .item .text, #series #V .item .text, #series #W .item .text, #series #X .item .text, #series #Y .item .text, #series #Z .item .text {
+  position: relative;
+  left: 70px;
+  bottom: 100px;
+}
+#series #A .item img, #series #B .item img, #series #C .item img, #series #D .item img, #series #E .item img, #series #F .item img, #series #G .item img, #series #H .item img, #series #I .item img, #series #J .item img, #series #K .item img, #series #L .item img, #series #M .item img, #series #N .item img, #series #O .item img, #series #P .item img, #series #Q .item img, #series #R .item img, #series #S .item img, #series #T .item img, #series #U .item img, #series #V .item img, #series #W .item img, #series #X .item img, #series #Y .item img, #series #Z .item img {
+  width: 60px;
+  height: 75px;
+}
+h3 {
+  width: 1rem;
+}
+
+#chars {
+  font-size: 35px;
+  position: fixed;
+  border: solid 3px gray;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 300px;
+  top: 100px;
+  left: 75vw;
+}
+#chars a:hover {
+  color: aqua;
+}
+
+.tarih {
+  background-color: aqua;
+  width: 8rem;
+  padding: 5px;
+  border-style: solid;
+  border-color: #7fe5ff;
+  border-radius: 10px;
+  left: 800px;
+  position: relative;
+}
+
+.tarihb {
+  background-color: aqua;
+  width: 15rem;
+  padding: 5px;
+  border-style: solid;
+  border-color: #7fe5ff;
+  border-radius: 10px;
+  left: 750px;
+  position: relative;
 }
 
 .item a, .item p {
@@ -508,7 +550,6 @@ section {
     background-color: red;
   }
 }
-
 @-webkit-keyframes Submit {
   from {
     background-color: #121212;
@@ -519,7 +560,6 @@ section {
     padding: 1rem;
   }
 }
-
 @keyframes Submit {
   from {
     background-color: #121212;
@@ -530,7 +570,6 @@ section {
     padding: 1rem;
   }
 }
-
 @-webkit-keyframes Submitr {
   from {
     background-color: gray;
@@ -541,7 +580,6 @@ section {
     padding: 0.5rem;
   }
 }
-
 @keyframes Submitr {
   from {
     background-color: gray;
@@ -552,7 +590,6 @@ section {
     padding: 0.5rem;
   }
 }
-
 .fname, .email, .pw {
   margin: 20px;
 }
@@ -572,11 +609,11 @@ section {
   width: 100%;
   height: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.548);
   color: #000000;
   z-index: 10;
@@ -593,8 +630,8 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 2rem;
   background-color: var(--DarkMain);
   color: white;
@@ -678,13 +715,13 @@ section {
 .swiper-button-prev:after {
   padding-left: 2rem;
   font-family: "Material Icons" !important;
-  content: 'arrow_back_ios' !important;
+  content: "arrow_back_ios" !important;
 }
 
 .swiper-button-next:after {
   padding-right: 2rem;
   font-family: "Material Icons" !important;
-  content: 'arrow_forward_ios' !important;
+  content: "arrow_forward_ios" !important;
 }
 
 .avatar {
@@ -717,4 +754,5 @@ section {
 .avatar:hover a h4 {
   display: block;
 }
+
 /*# sourceMappingURL=Main.css.map */

@@ -50,29 +50,34 @@ def admin():
     return render_template("v55byo0k29.html")
 
 
+APP_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+
 @app.route("/yeni-bolum")
-def newepisode():
+def neu():
     return render_template("BolumYukle.html")
 
 
-APP_ROOT = os.path.dirname(os.path.abspath(__file__))
-
-@app.route("/yeni-bolum-tamam", methods=['POST'])
-def okeyepisode():
+@app.route("/upload", methods=['POST'])
+def upload():
     target = os.path.join(APP_ROOT, 'images/')
     print(target)
-    
+
     if not os.path.isdir(target):
         os.mkdir(target)
-    
+
     for file in request.files.getlist("file"):
         print(file)
         filename = file.filename
         destination = "/".join([target, filename])
         print(destination)
         file.save(destination)
-    
+
     return render_template("bolum-tamam.html")
+
+
+if __name__ == "__main__":
+    app.run(port=4555, debug=True)
 
 
 # Seriler
@@ -241,5 +246,22 @@ def isekai():
 def magic():
     return render_template("Tags/magic.html")
 
-if __name__=="__main__":
-    app.run(port=5000, debug=True)
+
+@app.route("/1302")
+def demon():
+    return render_template("Tags/demon.html")
+
+
+@app.route("/6489")
+def ecchi():
+    return render_template("Tags/ecchi.html")
+
+
+@app.route("/1957")
+def horror():
+    return render_template("Tags/horror.html")
+
+
+@app.route("/1675")
+def supernatural():
+    return render_template("Tags/supernatural.html")

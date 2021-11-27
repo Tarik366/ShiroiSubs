@@ -1,218 +1,251 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <title>Seriler</title>
-    <script src="https://kit.fontawesome.com/9d73c3cf07.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../static/images/Logo.png" type="image/png" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../static/stylesheets/Main.css">
-</head>
-<body>
-<div class="container">
-    <header id="header">
-        <table>
-            <tr>
-                <td>
-                    <div class="logo">
-                        <a href="http://127.0.0.1:5000">
-                            <img src="../static/images/Logo.png" alt="ShiroiSubs">
-                        </a>
-                    </div>
-                </td>
-                <td id="Menu">
-                    <div class="Menu">
-                        <input class="men" type="checkbox">
-                    </div>
-                </td>
-                <!--<script>
-                    document.getElementById("Menu").addEventListener("click", function(){
-                        document.querySelector(".Head").style.display = "block";
-                    })
-                </script> -->
-                <td>
-                    <div class="Seriler Head">
-                        <a href="http://127.0.0.1:5000/seriler">Seriler</a>
-                    </div>
-                </td>
-                <td>
-                    <div class="Duyurular Head">
-                        <a href="http://127.0.0.1:5000/duyurular">Duyurular</a>
-                    </div>
-                </td>
-                <td>
-                    <div class="Devam Head">
-                        <a href="http://127.0.0.1:5000/devam">Devam Edenler</a>
-                    </div>
-                </td>
-                <td>
-                    <div class="Bitti Head">
-                        <a href="http://127.0.0.1:5000/bitti">Biten Seriler</a>
-
-                    </div>
-                </td>
-                <td>
-                    <div class="discord Head">
-                        <a href="https://discord.gg/BeVbkSV7kv">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                    </div>
-                </td>
-                <td class="Head">
-                    <div>
-                        <a class="Login" href="http://127.0.0.1:5000/login">Giriş Yap</a>
-                    </div>
-                </td>
-                <td class="Head">
-                    <div>
-                        <a class="Login" href="Login/signup.html">Kayıt Ol</a>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </header>
+{% extends 'layout.html' %}
+{% block body_content %}
     <main>
-        <section>
-            <div class="item"> 
-                <div class="ite">
-                    <a href="http://127.0.0.1:5000/61772">
-                        <img width="200" height="300" src="../static/Series/oneesan.jpg">
-                        <div class="text">
-                            <p>The Story of an Onee-San Who Wants to Keep a High School Boy </p>
-                            <a class="link" href="http://127.0.0.1:5000/4571">Komedi<br></a>
-                            <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler<br></a>
-                            <a class="link" href="http://127.0.0.1:5000/5041">Romantizm</a>
-                        </div>
-                    </a>
+        <section id="chars">
+            <div class="char">
+                <a href="#A">A</a>
+                <a href="#B">B</a>
+                <a href="#C">C</a>
+                <a href="#D">D</a>
+                <a href="#E">E</a>
+                <a href="#F">F</a>
+                <a href="#G">G</a>
+                <a href="#H">H</a>
+                <a href="#I">I</a>
+                <a href="#J">J</a>
+                <a href="#K">K</a>
+                <a href="#L">L</a>
+                <a href="#M">M</a>
+                <a href="#N">N</a>
+                <a href="#O">O</a>
+                <a href="#P">P</a>
+                <a href="#Q">Q</a>
+                <a href="#R">R</a>
+                <a href="#S">S</a>
+                <a href="#T">T</a>
+                <a href="#U">U</a>
+                <a href="#V">V</a>
+                <a href="#W">W</a>
+                <a href="#X">X</a>
+                <a href="#Y">Y</a>
+                <a href="#Z">Z</a>
+            </div>
+        </section>
+        <section id="series">
+            <div id="A" class="heads">
+                <h3>A</h3>
+                <div class="item">
+                    <div class="ite">
+                        <a class="link img" href="http://127.0.0.1:5000/02273">
+                            <img src="../static/Series/abandoned.jpg">
+                            <div class="text">
+                                <p>Abandoned Wife Has a New Husband, </p>
+                                <a class="link" href="http://127.0.0.1:5000/2463">Drama, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5994">Fantazi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ite">
+                        <a class="link img" href="http://127.0.0.1:5000/98637">
+                            <img src="../static/Series/America.png">
+                            <div class="text">
+                                <p>American weeb in Japan, </p>
+                                <a class="link" href="http://127.0.0.1:5000/4517">Komedi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler, </a>
+                                <a class="link" href="http://127.0.0.1:5000/3783">School life</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ite">
+                        <a class="link img" href="http://127.0.0.1:5000/60078">
+                            <img src="../static/Series/mother.jpg">
+                            <div class="text">
+                                <p>A mother in her 30s like me is alright?, </p>
+                                <a class="link" href="http://127.0.0.1:5000/4517">Komedi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm, </a>
+                                <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ite">
+                        <a class="link img" href="http://127.0.0.1:5000/36531">
+                            <img src="../static/Series/night.jpg">
+                            <div class="text">
+                                <p>A Night With The Emperor, </p>
+                                <a class="link" href="http://127.0.0.1:5000/4517">Komedi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5994">Fantazi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm</a>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="ite">
-                    <a href="http://127.0.0.1:5000/83905">
-                        <img width="200" height="300" src="../static/Series/tekito.jpg">
-                        <div class="text">
-                            <p>Tekito na Maid no Onee-san to Erasou de Ichizu na Bocchan</p>
-                            <a class="link" href="http://127.0.0.1:5000/4571">Komedi <br></a>
-                            <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler <br></a>
-                            <a class="link" href="http://127.0.0.1:5000/5041">Romantizm </a>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ite">
+            <div id="B" class="heads">
+                <h3>B</h3>
+                <div class="item">
+                    <div class="ite">
                         <a href="http://127.0.0.1:5000/98637">
-                        <img width="200" height="300" src="../static/Series/Bakapple.jpg">
-                        <div class="text">
-                            <p>Bakapple </p>
-                            <a class="link" href="http://127.0.0.1:5000/4571">Komedi <br></a>
-                            <a class="link" href="http://127.0.0.1:5000/5041">Romantizm</a>
-                            <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler</a>
-                        </div>
-                    </a>
+                            <img width="200" height="300" src="../static/Series/Bakapple.jpg">
+                            <div class="text">
+                                <p>Bakapple </p>
+                                <a class="link" href="http://127.0.0.1:5000/4571">Komedi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm, </a>
+                                <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler</a>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="ite">
-                    <a class="link img" href="http://127.0.0.1:5000/02273">
-                        <img width="200"  height="300" src="../static/Series/abandoned.jpg">
-                        <div class="text">
-                            <p>Abandoned Wife Has a New Husband<br></p>
-                            <a class="link" href="http://127.0.0.1:5000/2463">Drama <br></a>
-                            <a class="link" href="http://127.0.0.1:5000/5994">Fantazi <br></a>
-                            <a class="link" href="http://127.0.0.1:5000/5041">Romantizm</a>
-                        </div>
-                    </a>
+            <div id="D" class="heads">
+                <h3>D</h3>
+                <div class="item">
+                    <div class="ite">
+                        <a class="link img" href="http://127.0.0.1:5000/55019">
+                            <img src="../static/Series/Dragon.jpg">
+                            <div class="text">
+                                <p>Dragon raising manual, </p>
+                                <a class="link" href="http://127.0.0.1:5000/5994">Fantazi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/8114">İsekai, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5057">Büyü</a>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="ite">
-                    <a class="link img" href="http://127.0.0.1:5000/98637">
-                        <img width="200"  height="200" src="../static/Series/America.png">
-                        <div class="text">
-                            <p>American weeb in Japan<br></p>
-                            <a class="link" href="http://127.0.0.1:5000/4517">Komedi <br></a>
-                            <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler <br></a>
-                            <a class="link" href="http://127.0.0.1:5000/3783">School life</a>
-                        </div>
-                    </a>
+            <div id="F" class="heads">
+                <h3>F</h3>
+                <div class="item">
+                    <div class="ite">
+                        <a href="http://127.0.0.1:5000/36560">
+                            <img width="200" height="300" src="../static/Series/fox.webp">
+                            <div class="text">
+                                <p>The Fox's Trap</p>
+                                <a class="link" href="http://127.0.0.1:5000/4517">Komedi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/2463">Drama, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5994">Fantazi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/3783">Okul hayatı, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm, </a>
+                                <a class="link" href="http://127.0.0.1:5000/1302">Şeytanlar, </a>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="ite">
-                    <a class="link img" href="http://127.0.0.1:5000/60078">
-                        <img width="200"  height="300" src="../static/Series/mother.jpg">
-                        <div class="text">
-                            <p>A mother in her 30s like me is alright?<br></p>
-                            <a class="link" href="http://127.0.0.1:5000/4517">Komedi<br></a>
-                            <a class="link" href="http://127.0.0.1:5000/5041">Romantizm<br></a>
-                            <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler</a>
-                        </div>
-                    </a>
+            <div id="I" class="heads">
+                <h3>I</h3>
+                <div class="item">
+                    <div class="ite">
+                        <a href="http://127.0.0.1:5000/81853">
+                            <img width="200" height="300" src="../static/Series/beat.jpg">
+                            <div class="text">
+                                <p>I Only Want To Beat You</p>
+                                <a class="link" href="http://127.0.0.1:5000/4571">Komedi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/3783">Okul hayatı, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ite">
+                        <a class="link img" href="http://127.0.0.1:5000/83410">
+                            <img src="../static/Series/iceGuy.jpg">
+                            <div class="text">
+                                <p>Ice Guy And The Cool Female Colleague, </p>
+                                <a class="link" href="http://127.0.0.1:5000/4517">Komedi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm, </a>
+                                <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler</a>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="ite">
-                    <a class="link img" href="http://127.0.0.1:5000/36531">
-                        <img width="200"  height="300" src="../static/Series/night.jpg">
-                        <div class="text">
-                            <p>A Night With The Emperor<br></p>
-                            <a class="link" href="http://127.0.0.1:5000/4517">Komedi<br></a>
-                            <a class="link" href="http://127.0.0.1:5000/5994">Fantazi<br></a>
-                            <a class="link" href="http://127.0.0.1:5000/5041">Romantizm</a>
-                        </div>
-                    </a>
+            <div id="M" class="heads">
+                <h3>M</h3>
+                <div class="item">
+                    <div class="ite">
+                        <a href="http://127.0.0.1:5000/97141">
+                            <img width="200" height="300" src="../static/Series/Memegirl.jpg">
+                            <div class="text">
+                                <p>Meme girls</p>
+                                <a class="link" href="http://127.0.0.1:5000/4571">Komedi </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ite">
+                        <a href="http://127.0.0.1:5000/10373">
+                            <img width="200" height="300" src="../static/Series/roommate.jpg">
+                            <div class="text">
+                                <p>My Roommate Isn't From This World</p>
+                                <a class="link" href="http://127.0.0.1:5000/4571">Komedi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/6489">Ecchi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/1957">Korku, </a>
+                                <a class="link" href="http://127.0.0.1:5000/0529">Sıradışı olaylar, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm </a>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="ite">
-                    <a class="link img" href="http://127.0.0.1:5000/55019">
-                        <img width="200"  height="300" src="../static/Series/Dragon.jpg">
-                        <div class="text">
-                            <p>Dragon raising manual<br></p>
-                            <a class="link" href="http://127.0.0.1:5000/5994">Fantazi <br></a>
-                            <a class="link" href="http://127.0.0.1:5000/8114">İsekai <br></a>
-                            <a class="link" href="http://127.0.0.1:5000/5057">Büyü</a>
-                        </div>
-                    </a>
+            <div id="O" class="heads">
+                <h3>O</h3>
+                <div class="item">
+                    <div class="ite">
+                        <a href="http://127.0.0.1:5000/30034">
+                            <img width="200" height="300" src="../static/Series/osanajimi.jpg">
+                            <div class="text">
+                                <p>Osanajimi Ni Najimitai</p>
+                                <a class="link" href="http://127.0.0.1:5000/4571">Komedi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/2463">Drama, </a>
+                                <a class="link" href="http://127.0.0.1:5000/3783">Okul hayatı, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm </a>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="ite">
-                    <a class="link img" href="http://127.0.0.1:5000/83410">
-                        <img width="200"  height="300" src="../static/Series/iceGuy.jpg">
-                        <div class="text">
-                            <p>Ice Guy And The Cool Female Colleague<br></p>
-                            <a class="link" href="http://127.0.0.1:5000/4517">Komedi <br></a>
-                            <a class="link" href="http://127.0.0.1:5000/5041">Romantizm<br></a>
-                            <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler</a>
-                        </div>
-                    </a>
+            <div id="S" class="heads">
+                <h3>S</h3>
+                <div class="item"> 
+                    <div class="ite">
+                        <a href="http://127.0.0.1:5000/61772">
+                            <img width="200" height="300" src="../static/Series/oneesan.jpg">
+                            <div class="text">
+                                <p>The Story of an Onee-San Who Wants to Keep a High School Boy </p>
+                                <a class="link" href="http://127.0.0.1:5000/4571">Komedi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="T" class="heads">
+                <h3>T</h3>    
+                <div class="item">
+                    <div class="ite">
+                        <a href="http://127.0.0.1:5000/83905">
+                            <img width="200" height="300" src="../static/Series/tekito.jpg">
+                            <div class="text">
+                                <p>Tekito na Maid no Onee-san to Erasou de Ichizu na Bocchan</p>
+                                <a class="link" href="http://127.0.0.1:5000/4571">Komedi, </a>
+                                <a class="link" href="http://127.0.0.1:5000/0529">Yaşamdan kesitler, </a>
+                                <a class="link" href="http://127.0.0.1:5000/5041">Romantizm </a>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <aside>
-        <iframe class="Dframe" src="https://discord.com/widget?id=855468840237137931&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </aside>
-</div>
-
-<div class="offline">
-    İnternet bağlantınızda bir problem var, lütfen internet bağlantınızı kontrol edin.
-</div>
-<script>
-    const div = document.getElementById('offline')
-    window.addEventListener('online', () => {
-        div.style.display = 'none'
-    })
-    window.addEventListener('offline', () => {
-        div.style.display = 'block'
-    })
-</script>
-<div class="up">
-    <a href="#header">
-        <i class="material-icons md-48">expand_less</i>
-    </a>
-</div>
-</body>
-</html>
+{% endblock %}

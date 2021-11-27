@@ -1,10 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Duyurular</title>
-</head>
-<body>
+{% extends 'layout.html' %}
+{% block body_content %}
 
-</body>
-</html>
+    <main>
+        <section>
+            <div onclick="popup" class="du">
+                <h1>Çevirmen aranıyor</h1>
+                <p> Selamlar dostlar! Ben ShiroiSub ekibinin kurucusu MiyamuraArt.
+                    Ekibimize yeni üyeler aramaktayız. Öncelikle bu işi gönüllü yaptığımızı söylemek isterim.
+                    Duyuru biracık resmi olabilir kusura bakmayın (づ｡◕‿‿◕｡)づ<br><br>
+                <h3 class="tarih">25 Kasım 2021</h3>
+            </div>
+            <div id="du">
+                <p>Selamlar, ben ShiroiSub ekibinin kurucusu MiyamuraArt. Ekibimize katılacak yeni ekip arkadaşları arıyoruz!<br><br>
+
+                    Rahat bir ekibiz ve kimseyi zorlamayız. Ekibimizin Discord kanalına gelip sohbet muhabbet edip bizleri tanıyabilirsiniz.<br><br><br>
+                    
+                    
+                    Gel gelelim konuya;<br><br><br>
+                    
+                    
+                    Çevirmenlik için;<br><br>
+                    
+                    [•] Seviyenizin en az B1-B2 olması.<br><br>
+                    
+                    [•] Kendi yorumunuzu katabilmeniz.<br><br>
+                    
+                    [•] Haftada en az 2 bölüm verebilmeniz.<br><br>
+                    
+                    [•] Rahatız ancak sorumluluk önemli. Bölümleri vaktinde teslim edebilmeniz. <br><br>
+                    
+                    [•] Rahat olmanız.<br><br><br>
+                    
+                    
+                    Editörlük için;<br><br>
+                    
+                    [•] Webtoon tarafında editör açığımız olmadığı için, manga editörü olmanız.<br><br>
+                    
+                    [•] Daha önce deneyiminiz olması.<br><br>
+                    
+                    [•] Haftada en az 2 bölüm verebilmeniz.<br><br>
+                    
+                    [•] Bölümleri zamanında teslim edebilmeniz.<br><br>
+                    
+                    [•] Rahat olmanız.<br><br>
+                    
+                    
+                    Umarım bu yazı sizi cezbedebilmiş ve Discord kanalımıza koşmaya başlamıştırsınız!<br><br>
+                    
+                    Bana buralardan ulaşabilirsiniz:<br><br>
+                    
+                    Discord: discord.gg/q5KpGAJaWe<br><br>
+                    
+                    Instagram: instagram.com/shiroisub<br><br>
+                    
+                    E-Mail: shiroisub.uh@gmail.com<br><br>
+                <h3 class="tarihb">25 Kasım 2021</h3>
+            </div>
+            <script>
+                function popup() {
+                    var popup = document.getElementById("du");
+                    popup.classList.toggle("flex");
+                }
+            </script>
+        </section>
+    </main>
+
+{% endblock %}
