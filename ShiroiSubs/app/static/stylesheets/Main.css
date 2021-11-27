@@ -443,10 +443,12 @@ section {
   border-radius: 1rem;
 }
 
-#series #A .item, #series #B .item, #series #C .item, #series #D .item, #series #E .item, #series #F .item, #series #G .item, #series #H .item, #series #I .item, #series #J .item, #series #K .item, #series #L .item, #series #M .item, #series #N .item, #series #O .item, #series #P .item, #series #Q .item, #series #R .item, #series #S .item, #series #T .item, #series #U .item, #series #V .item, #series #W .item, #series #X .item, #series #Y .item, #series #Z .item {
+#series .item {
   width: 700px;
   height: 80px;
   overflow-y: hidden;
+  animation-name: Hoverr;
+  animation-duration: 1s;
 }
 .heads {
   position: relative;

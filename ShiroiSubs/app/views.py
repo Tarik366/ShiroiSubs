@@ -180,6 +180,16 @@ def today():
 def ao():
     return render_template("Seriler/AoNoHako.html")
 
+
+@app.route("/64685")
+def tennen():
+    return render_template("Tags/tennen.html")
+
+
+@app.route("/77374")
+def live():
+    return render_template("Seriler/PleaseDontLivestreamIt/PleaseDontLivestreamIt.html")
+
 # Etiketler
 @app.route("/4517")
 def comedy():
@@ -269,3 +279,18 @@ def horror():
 @app.route("/1675")
 def supernatural():
     return render_template("Tags/supernatural.html")
+
+
+@app.route("/4646")
+def spor():
+    return render_template("Tags/spor.html")
+
+
+@app.route("/1675")
+def action():
+    return render_template("Tags/action.html")
+
+
+@app.route("/1598")
+def macera():
+    return render_template("Tags/adventure.html")
