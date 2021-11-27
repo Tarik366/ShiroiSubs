@@ -176,6 +176,10 @@ def today():
     return render_template("Seriler/TodayLivingWithYou/TodayLivingWithYou.html")
 
 
+@app.route("/26475")
+def ao():
+    return render_template("Seriler/AoNoHako.html")
+
 # Etiketler
 @app.route("/4517")
 def comedy():
