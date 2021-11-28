@@ -16,11 +16,6 @@ def homen(name):
     return render_template("main.html", username=name)
 
 
-@app.route("/seriler")
-def seriler():
-    return render_template("seriler.html")
-
-
 @app.route("/yeniler")
 def yeniler():
     return render_template("Yeniler.html")
